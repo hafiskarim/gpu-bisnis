@@ -100,10 +100,6 @@ i.icon--custom-position {
   right: 25px;
 }
 
-.gpu__content {
-  margin: 40px 0px;
-}
-
 .gpu__content.new-release h2 {
   color: #E20A15;
   font-size: 36px;
@@ -117,4 +113,8 @@ i.icon--custom-position {
   font-size: 15px;
   font-weight: 400;
   text-align: center;
+}
+
+.wrapper__carousel img {
+  height: 210px;
 }
