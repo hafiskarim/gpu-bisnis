@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link href="./fontawesome/css/all.css" rel="stylesheet">
+  <title>Home - Gramedia Pustaka Utama</title>
+</head>
+
+<body>
+  <!-- START HEADER -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg--custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo__gpu-desktop" src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="form__search position-relative">
+          <input class="form-control custom--input" type="search" placeholder="Search books or author ...">
+          <img src="./assets/icon-search.svg" class="search-icon" alt="search icon" />
+        </form>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <span class="icon-home">
+                  <img src="./assets/icon-home.svg" class="home-icon" alt="home icon" />
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#new-release">New Release</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bestseller">Bestseller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#books">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#authors">Authors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#updats">Updates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class="mx-2">
+              <button type="button" class="btn btn-primary--custom">Login</button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-secondary--custom">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- START ISI KONTEN HOME -->
+  <main>
+    <!-- START CAROUSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img-carousel.svg" class="d-block w-100" alt="Gramedia Pustaka Utama">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img-carousel.svg" class="d-block w-100" alt="Gramedia Pustaka Utama">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img-carousel.svg" class="d-block w-100" alt="Gramedia Pustaka Utama">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <i class="icon--custom-position fas fa-chevron-left"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <i class="icon--custom-position fas fa-chevron-right"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- END CAROUSEL -->
+
+    <!-- START KONTEN NEW RELEASE -->
+    <section class="gpu__content new-release">
+      <div class="d-flex justify-content-center">
+        <div>
+          <h2>New Release</h2>
+          <h3>Temukan sudut pandang yang berbeda melalui buku-buku terbitan terbaru dari kami</h3>
+        </div>
+      </div>
+    </section>
+    <!-- END KONTEN NEW RELEASE -->
+
+  </main>
+  <!-- END ISI KONTEN HOME -->
+
+  <script src="./bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
