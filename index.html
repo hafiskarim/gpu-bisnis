@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./bootstrap/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" href="assets/logo-gpu-mobile.svg">
   <link rel="stylesheet" href="index.css">
   <link href="./fontawesome/css/all.css" rel="stylesheet">
   <link href="./owlcarousel/owl.carousel.min.css" rel="stylesheet">
@@ -79,7 +80,7 @@
   <!-- START ISI KONTEN HOME -->
   <main>
     <!-- START CAROUSEL -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide custom" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./assets/img-carousel.svg" class="d-block w-100" alt="Gramedia Pustaka Utama">
@@ -111,52 +112,146 @@
       <div class="d-flex justify-content-center">
         <div>
           <h2>New Release</h2>
-          <h3>Temukan sudut pandang yang berbeda melalui buku-buku terbitan terbaru dari kami</h3>
+          <h3>
+            <a href="#">
+              Temukan sudut pandang yang berbeda melalui buku-buku terbitan terbaru dari kami
+              <i class="fas fa-arrow-right custom--color-orange"></i>
+            </a>
+          </h3>
         </div>
       </div>
-
       <div class="wrapper__carousel">
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel autoplay owl-theme">
           <div class="item">
-            <div class="d-flex">
-              <img src="./assets/book-release-1.svg" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
-              <div>
-                <div>Classic Books</div>
-                <div>Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)</div>
-                <div>Victor Hugo</div>
+            <div class="d-flex align-items-end">
+              <img src="./assets/book-release-1.png" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
+              <div class="carousel__detail">
+                <div class="carousel__title">Classic Books</div>
+                <div class="carousel__desc">Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)</div>
+                <div class="carousel__author">Victor Hugo</div>
               </div>
             </div>
           </div>
           <div class="item">
-            <div>
-              <img src="./assets/book-release-2.svg" alt="Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)" />
+            <div class="d-flex align-items-end">
+              <img src="./assets/book-release-2.png"
+                alt="Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)" />
+              <div class="carousel__detail">
+                <div class="carousel__title">Biography</div>
+                <div class="carousel__desc">Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)
+                </div>
+                <div class="carousel__author">Juhaeri</div>
+              </div>
             </div>
           </div>
           <div class="item">
-            <div>
-              <img src="./assets/book-release-3.svg" alt="Ekonomi Eksperimental" />
+            <div class="d-flex align-items-end">
+              <img src="./assets/book-release-3.png" alt="Ekonomi Eksperimental" />
+              <div class="carousel__detail">
+                <div class="carousel__title">Business Management & Leadership</div>
+                <div class="carousel__desc">Ekonomi Eksperimental</div>
+                <div class="carousel__author">Bambang Juanda</div>
+              </div>
             </div>
           </div>
           <div class="item">
-            <div class="d-flex">
-              <img src="./assets/book-release-1.svg" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
+            <div class="d-flex align-items-end">
+              <img src="./assets/book-release-1.png" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
+              <div class="carousel__detail">
+                <div class="carousel__title">Classic Books</div>
+                <div class="carousel__desc">Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)</div>
+                <div class="carousel__author">Victor Hugo</div>
+              </div>
             </div>
           </div>
           <div class="item">
-            <div class="d-flex">
-              <img src="./assets/book-release-2.svg" alt="Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)" />
+            <div class="d-flex align-items-end">
+              <img src="./assets/book-release-2.png"
+                alt="Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)" />
+              <div class="carousel__detail">
+                <div class="carousel__title">Biography</div>
+                <div class="carousel__desc">Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)
+                </div>
+                <div class="carousel__author">Juhaeri</div>
+              </div>
             </div>
           </div>
           <div class="item">
-            <div class="d-flex">
-              <img src="./assets/book-release-3.svg" alt="Ekonomi Eksperimental" />
+            <div class="d-flex align-items-end">
+              <img src="./assets/book-release-3.png" alt="Ekonomi Eksperimental" />
+              <div class="carousel__detail">
+                <div class="carousel__title">Business Management & Leadership</div>
+                <div class="carousel__desc">Ekonomi Eksperimental</div>
+                <div class="carousel__author">Bambang Juanda</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
     <!-- END KONTEN NEW RELEASE -->
+
+    <!-- START KONTEN COMING SOON -->
+    <section class="gpu__content coming-soon">
+      <div class="container">
+        <div class="wrapper__carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <h2>Coming Soon</h2>
+              <h3>Tunggu dan segera nikmati buku-buku terbaru dari kami</h3>
+              <a class="coming-soon__more" href="#">
+                More is coming
+                <i class="fas fa-arrow-right custom--color-white"></i>
+              </a>
+            </div>
+            <div class="item">
+              <div class="d-flex align-items-center">
+                <img src="./assets/book-release-4.png" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
+                <div class="carousel__detail">
+                  <div class="carousel__title">Sourdough Bread: Roti dengan Ragi Alami</div>
+                  <div class="carousel__timedate">Maret 2022</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="d-flex align-items-center">
+                <img src="./assets/book-release-5.png" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
+                <div class="carousel__detail">
+                  <div class="carousel__title">Black Showman dan Pembunuhan di Kota Tak Bernama</div>
+                  <div class="carousel__timedate">Januari 2022</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="d-flex align-items-center">
+                <img src="./assets/book-release-6.png" alt="Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)" />
+                <div class="carousel__detail">
+                  <div class="carousel__title">Pramoedya Ananta Toer dan Sastra Realisme Sosialis</div>
+                  <div class="carousel__timedate">End year 2021</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END KONTENT COMING SOON -->
+
+    <!-- START KONTEN BEST SELLING BOOK -->
+    <section class="gpu__content bestselling">
+      <div class="container">
+        <div class="text-center">
+          <h2>Bestselling Books</h2>
+          <h3>
+            <a href="#">
+              Dapatkan buku-buku terbaik dari kami
+              <i class="fas fa-arrow-right custom--color-orange"></i>
+            </a>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- END KONTEN BEST SELLING BOOK -->
 
   </main>
   <!-- END ISI KONTEN HOME -->
