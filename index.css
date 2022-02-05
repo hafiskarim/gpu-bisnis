@@ -8,8 +8,22 @@
   src: url(./fonts/Author-Bold.otf);
 }
 
+@font-face {
+  font-family: authorSemiBold;
+  src: url(./fonts/Author-Semibold.otf);
+}
+
+@font-face {
+  font-family: authorMedium;
+  src: url(./fonts/Author-Medium.otf);
+}
+
 body {
-  font-family: authorRegular;
+  font-family: authorRegular !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: authorRegular !important;
 }
 
 
@@ -69,7 +83,7 @@ header .nav-item .nav-link.active {
 
 header .nav-item .nav-link {
   font-size: 16px;
-  font-weight: 600;
+  font-family: authorSemiBold;
   color: #333333 !important;
   text-transform: uppercase;
 }
@@ -123,21 +137,21 @@ i.icon--custom-position {
 .gpu__content.new-release .carousel__category {
   color: #009688;
   font-size: 15px;
-  font-weight: 500;
+  font-family: authorMedium;
   margin-bottom: 15px;
 }
 
 .gpu__content.new-release .carousel__title {
   color: #000000;
   font-size: 20px;
-  font-weight: 500;
+  font-family: authorMedium;
   margin-bottom: 15px;
 }
 
 .gpu__content.new-release .carousel__author {
   color: #1C79E5;
   font-size: 16px;
-  font-weight: 500;
+  font-family: authorMedium;
 }
 
 .carousel.slide.custom button:hover {
@@ -207,7 +221,7 @@ i.icon--custom-position {
 .gpu__content.coming-soon .coming-soon__more {
   color: #ffffff;
   font-size: 18px;
-  font-weight: 500;
+  font-family: authorMedium;
 }
 
 .fa-arrow-right.custom--color-white {
@@ -221,20 +235,24 @@ i.icon--custom-position {
 .gpu__content.coming-soon .carousel__title {
   color: #ffffff;
   font-size: 20px;
-  font-weight: 500;
+  font-family: authorMedium;
   margin-bottom: 15px;
 }
 
 .gpu__content.coming-soon .carousel__timedate {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 500;
+  font-family: authorMedium;
 }
 
 .gpu__content.coming-soon .wrapper__carousel .owl-dots {
   display: none;
 }
 
+
+.gpu__content.bestselling {
+  margin-bottom: 300px;
+}
 
 .gpu__content.bestselling h2 {
   font-size: 36px;
@@ -257,21 +275,26 @@ i.icon--custom-position {
 .gpu__content.bestselling .carousel__category {
   color: #009688;
   font-size: 15px;
-  font-weight: 500;
+  font-family: authorMedium;
   margin-bottom: 15px;
 }
 
 .gpu__content.bestselling .carousel__title {
   color: #000000;
   font-size: 20px;
-  font-weight: 500;
+  font-family: authorMedium;
   margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .gpu__content.bestselling .carousel__author {
   color: #1C79E5;
   font-size: 16px;
-  font-weight: 500;
+  font-family: authorMedium;
 }
 
 .book__wrapper {
@@ -291,7 +314,142 @@ i.icon--custom-position {
 
 .gpu__content.quotes {
   margin-top: 50px;
+  background: url('./assets/parallax-bg.png');
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.quotes__wrapper .main-quotes {
+  font-size: 22px;
+  font-family: authorSemiBold;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.quotes__wrapper .secondary-quotes {
+  font-size: 16px;
+  font-family: authorSemiBold;
+  color: #ffffff;
+}
+
+.quotes__wrapper .author-quotes {
+  font-size: 15px;
+  font-family: authorSemiBold;
+  color: #ffffff;
+}
+
+.gpu__content.update-book {
+  margin: 30px 0px;
+}
+
+.gpu__content.update-book .row {
+  max-width: unset;
+}
+
+.gpu__content.update-book h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #E20A15;
+  margin-top: unset;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.gpu__content.update-book a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.update-book.title-book {
+  width: 270px;
+  font-size: 20px;
+  font-family: authorSemiBold;
+  color: #333333;
+  margin-top: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.update-book.category {
+  width: 270px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #009688;
+  margin: 15px 0px;
+}
+
+.update-book.category span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #635858;
+}
+
+.update-book.preview {
+  width: 270px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gpu__content.author-ofthemonth {
+  margin-top: 60px;
+  background: url('./assets/content-bg.png');
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gpu__content.author-ofthemonth img {
+  width: 200px;
+  height: 200px;
+}
+
+.gpu__content.author-ofthemonth h2 {
+  margin-top: unset;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.gpu__content.author-ofthemonth a {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: authorSemiBold;
+}
+
+.gpu__content.author-ofthemonth .author__wrapper {
+  margin-left: 30px;
+}
+
+.gpu__content.author-ofthemonth .author.name {
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.gpu__content.author-ofthemonth .author.desc {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: authorMedium;
+  margin: 15px 0px;
+}
+
+.gpu__content.author-ofthemonth .row {
+  max-width: unset;
+}
+
 
 
 /* MEDIA QUERY */
