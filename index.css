@@ -450,6 +450,19 @@ i.icon--custom-position {
   max-width: unset;
 }
 
+footer {
+  margin-top: 60px;
+}
+
+footer .wrapper__main-footer .row {
+  max-width: unset;
+}
+
+.wrapper__secondary-footer {
+  background: #F5F1F1;
+  padding: 30px 0px;
+}
+
 
 
 /* MEDIA QUERY */
