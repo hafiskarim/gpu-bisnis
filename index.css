@@ -652,6 +652,75 @@ footer .wrapper__main-footer {
 
 
 /* DETAIL BUKU */
+
+aside {
+  position: fixed;
+  left: 5%;
+  top: 20%;
+  z-index: 999;
+}
+
+.aside__label {
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+aside .aside__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+aside .aside__icon i {
+  position: relative;
+  top: 20%;
+  color: #ffffff;
+}
+
+aside .aside__icon.aside__icon.facebook i {
+  left: 34%;
+}
+
+aside .aside__icon.aside__icon.twitter i {
+  left: 28%;
+  top: 23%;
+}
+
+aside .aside__icon.aside__icon.gmail i {
+  left: 25%;
+}
+
+aside .aside__icon.aside__icon.linkedin i {
+  left: 29%;
+}
+
+aside .aside__icon.aside__icon.mail i {
+  left: 29%;
+}
+
+aside .aside__icon.facebook {
+  background: #3A589B;
+}
+
+aside .aside__icon.twitter {
+  background: #1CB7EB;
+}
+
+aside .aside__icon.gmail {
+  background: #E3411F;
+}
+
+aside .aside__icon.linkedin {
+  background: #007AB9;
+}
+
+aside .aside__icon.mail {
+  background: #BBBBBB;
+}
+
 .wrapper__breadcrumb {
   margin-top: 100px;
 }
