@@ -31,6 +31,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* HOME / INDEX */
+
 .nav-link.active .icon-home {
   filter: invert(15%) sepia(67%) saturate(5667%) hue-rotate(350deg) brightness(102%) contrast(92%);
   position: relative;
@@ -130,6 +132,30 @@ header .navbar-nav .show > .nav-link {
 
 header .navbar-brand {
   margin-right: 40px;
+  margin-left: 30px;
+}
+
+.wrapper__user-login {
+  margin-right: 30px;
+}
+
+.user-login__label {
+  font-size: 13px;
+  font-family: authorMedium;
+  color: #333333;
+  text-align: right;
+}
+
+.user-login__name {
+  font-size: 13px;
+  color: #666666;
+  text-align: right;
+}
+
+.user-login__img {
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
 }
 
 .btn.mobile-login {
@@ -505,10 +531,15 @@ i.icon--custom-position {
 
 footer {
   margin-top: 60px;
+  border-top: 1px solid #EDEDED;
 }
 
 footer .wrapper__main-footer .row {
   max-width: unset;
+}
+
+footer .wrapper__main-footer {
+ padding-top: 40px;
 }
 
 .wrapper__secondary-footer {
@@ -620,6 +651,264 @@ footer .wrapper__main-footer .row {
 }
 
 
+/* DETAIL BUKU */
+.wrapper__breadcrumb {
+  margin-top: 100px;
+}
+
+.wrapper__breadcrumb .breadcrumb-item {
+  background: #F4F4F4;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding: 5px 12px;
+}
+
+.wrapper__breadcrumb .breadcrumb-item a {
+  color: #9E8E8E;
+  font-size: 14px;
+  font-family: authorMedium;
+}
+
+.wrapper__breadcrumb .breadcrumb-item.active {
+  background: #E20A15;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding: 5px 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: authorMedium;
+}
+
+.wrapper__breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+  content: unset;
+}
+
+.gpu__content.detail-buku {
+  margin: 40px 150px;
+}
+
+.detail-buku__img {
+  margin-right: 30px;
+}
+
+.detail-buku__img img {
+  max-width: 320px;
+}
+
+.detail-buku__category {
+  font-size: 20px;
+  color: #E20A15;
+  font-family: authorSemiBold;
+  text-transform: uppercase;
+}
+
+.detail-buku__container h1 {
+  margin: 15px 0px;
+}
+
+.detail-buku__container h2 {
+  margin: unset;
+}
+
+.detail-buku__title {
+  font-size: 30px;
+  color: #000000;
+  font-family: authorMedium;
+}
+
+.detail-buku__author {
+  font-size: 18px;
+  color: #333333;
+}
+
+.detail-buku__author span {
+  font-size: 18px;
+  color: #1C79E5;
+  font-family: authorMedium;
+}
+
+.detail-buku__tabs {
+  margin: 20px 0px;
+}
+
+.detail-buku__tabs .nav.nav-pills {
+  margin-left: 0;
+}
+
+.detail-buku__tabs .nav.nav-pills .nav-item {
+  margin-right: 10px;
+}
+
+.detail-buku__tabs .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #ffffff;
+  background-color: #009688;
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.detail-buku__tabs .nav-pills .nav-link {
+  background: #EEEEEE;
+  color: #333333;
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.icon-love-red {
+  color: #FB4E4E;
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+  margin-right: 2px;
+}
+
+.details-label {
+  font-size: 16px;
+  color: #333333;
+  font-family: authorMedium;
+}
+
+.details-value span {
+  position: absolute;
+  left: 20%;
+}
+
+.details-value {
+  font-size: 16px;
+  color: #333333;
+  font-family: authorMedium;
+}
+
+.details-tags-label {
+  font-family: authorSemiBold;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.details-tags-value {
+  background: #51C2F3;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 10px 10px 10px 0px;
+}
+
+.details-tags-value a {
+  font-family: authorMedium;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.detail-buku__button {
+  width: 100%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.detail-buku__button.primary--custom {
+  background: #FF6C2B;
+}
+
+.detail-buku__button.secondary--custom {
+  background: #3650DA;
+}
+
+.detail-buku__review .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background: #ffffff;
+  border-bottom: 3px solid #E20A15;
+  font-size: 20px;
+  color: #333333;
+  font-family: authorMedium;
+  border-radius: 0px;
+}
+
+.detail-buku__review .nav-pills .nav-link {
+  background: #ffffff;
+  font-size: 20px;
+  color: #666666;
+  font-family: authorMedium;
+  border-radius: 0px;
+}
+
+.detail-buku__review .nav-item {
+  margin-right: 30px;
+}
+
+.detail-buku__review .tab-content {
+  border: 1px solid #DFDFDF;
+  border-radius: 3px;
+  margin: 20px 0px;
+  height: 200px;
+}
+
+.review__label-first {
+  text-align: center;
+  font-family: authorMedium;
+  font-size: 16px;
+  color: #333333;
+}
+
+.review__label-second {
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.detail-buku__review .btn.btn-primary {
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.gpu__content.related-books {
+  margin: 0 100px;
+}
+
+.gpu__content.related-books h2 {
+  font-size: 36px;
+  margin: unset;
+  color: #333333;
+}
+
+.gpu__content.related-books h3 {
+  font-size: 15px;
+  margin: 20px 0px;
+  color: #000000;
+  width: 300px;
+}
+
+.related-books__lines {
+  border: 1px solid #E20A15;
+  position: relative;
+  top: 45%;
+  width: 100%;
+}
+
+.gpu__content.related-books .related-books__category {
+  color: #009688;
+  font-size: 15px;
+  font-family: authorMedium;
+  margin-bottom: 15px;
+}
+
+.gpu__content.related-books .related-books__title {
+  color: #000000;
+  font-size: 20px;
+  font-family: authorMedium;
+  margin-bottom: 15px;
+}
+
+.gpu__content.related-books .related-books__author {
+  color: #1C79E5;
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.related-books__detail-book {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {
@@ -730,6 +1019,22 @@ footer .wrapper__main-footer .row {
   .gpu__content.new-release {
     position: relative;
     bottom: 100px;
+  }
+
+  .detail-buku .detail-buku-wrap {
+    flex-wrap: wrap;
+  }
+
+  .gpu__content.detail-buku {
+    margin: 20px;
+  }
+
+  .gpu__content.related-books .related-books__category {
+    margin-bottom: 5px;
+  }
+  
+  .gpu__content.related-books .related-books__title {
+    margin-bottom: 5px;
   }
 
 }
