@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* HOME / INDEX */
+/* HOME atau INDEX */
 
 .nav-link.active .icon-home {
   filter: invert(15%) sepia(67%) saturate(5667%) hue-rotate(350deg) brightness(102%) contrast(92%);
@@ -653,7 +653,7 @@ footer .wrapper__main-footer {
 
 /* DETAIL BUKU */
 
-aside {
+aside.sharebar {
   position: fixed;
   left: 5%;
   top: 20%;
@@ -767,7 +767,7 @@ aside .aside__icon.mail {
 .detail-buku__category {
   font-size: 20px;
   color: #E20A15;
-  font-family: authorSemiBold;
+  font-family: authorSemiBold !important;
   text-transform: uppercase;
 }
 
@@ -782,12 +782,13 @@ aside .aside__icon.mail {
 .detail-buku__title {
   font-size: 30px;
   color: #000000;
-  font-family: authorMedium;
+  font-family: authorMedium !important;
 }
 
 .detail-buku__author {
   font-size: 18px;
   color: #333333;
+  margin: unset;
 }
 
 .detail-buku__author span {
@@ -979,6 +980,197 @@ aside .aside__icon.mail {
 }
 
 
+/* DETAIL UPDATES PROMO & EVENTS */
+
+.gpu__content.updates-promo {
+  margin: 30px 0px
+}
+
+.update-promo__img img {
+  max-width: 400px;
+  height: 100%;
+}
+
+.updates-promo__detail {
+  margin-left: 30px;
+}
+
+.gpu__content.updates-promo .updates-promo__detail .detail-promo__category {
+  margin: unset;
+  font-size: 20px;
+  color: #E20A15;
+  font-family: authorSemiBold !important;
+  text-transform: uppercase;
+}
+
+.gpu__content.updates-promo .updates-promo__detail .detail-promo__title {
+  font-size: 30px;
+  color: #000000;
+  font-family: authorMedium !important;
+  margin: 15px 0px;
+} 
+
+.gpu__content.updates-promo .updates-promo__detail .detail-promo__desc {
+  font-size: 16px;
+  color: #444444;
+  font-family: authorMedium !important;
+}
+
+.gpu__content.updates-promo .updates-promo__detail ul.detail-promo__desc {
+  margin-top: 30px;
+}
+
+.promo-desc__label {
+  font-size: 20px;
+  color: #333333;
+  font-family: authorSemiBold !important;
+  width: 40%;
+}
+
+.promo-desc__value {
+  font-size: 16px;
+  color: #333333;
+  width: 100%;
+}
+
+.updates-promo__item {
+  border-top: 1px solid #EEEEEE;
+  padding: 20px 0px;
+}
+
+.updates-promo__list {
+  margin: 30px 0px;
+}
+
+.promo-desc__value .value--bold {
+  font-family: authorSemiBold !important;
+}
+
+.value--margintop {
+  margin-bottom: 20px;
+}
+
+.updates-promo.masa-periode {
+  background: #F3FAFB;
+  border-radius: 5px;
+  padding: 20px 0px;
+}
+
+.masa-periode__label {
+  font-size: 20px;
+  color: #333333;
+  font-family: authorSemiBold !important;
+}
+
+.masa-periode__value {
+  font-size: 16px;
+  color: #ED1C24;
+  font-family: authorMedium !important;
+}
+
+.masa-periode__wrapper {
+  margin-left: 30px;
+}
+
+
+.all-updates__wrapper {
+  width: 100%;
+  margin: 30px;
+}
+
+.all-updates__search {
+  position: relative;
+}
+
+.form-control.custom--input.width {
+  width: 100%;
+}
+
+.search-icon--updates {
+  position: absolute;
+  top: 24%;
+  right: 2%;
+  width: 18px;
+  height: 18px;
+}
+
+.all-updates__list-wrapper {
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0px;
+}
+
+.all-updates__label {
+  color: #333333;
+}
+
+.all-updates__label.bold {
+  font-size: 20px;
+  font-family: authorSemiBold;
+}
+
+.all-updates__label.regular {
+  font-size: 15px;
+}
+
+.all-updates__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.all-updates__item img {
+  max-width: 110px;
+}
+
+.all-updates__item-value h2 {
+  font-size: 18px;
+  font-family: authorMedium;
+  color: #333333;
+  margin: unset;
+}
+
+.all-updates__item-value p {
+  font-size: 16px;
+  color: #836B6B;
+}
+
+.all-updates__item-value {
+ padding-left: 15px;
+}
+
+
+.line-gray {
+  border: 1px solid #EDEDED;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.gpu__content.other-promo .row {
+  max-width: unset;
+}
+
+.gpu__content.other-promo h2 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #E20A15;
+  margin-top: unset;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.gpu__content.other-promo a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.gpu__content.updates-promo .btn.btn-primary {
+  margin-bottom: 10px;
+}
+
+
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {
   .bestselling__wrapper {
@@ -1106,4 +1298,24 @@ aside .aside__icon.mail {
     margin-bottom: 5px;
   }
 
+  .gpu__content.updates-promo .custom--flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  aside.sharebar {
+    display: none;
+  }
+
+  .update-promo__img img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .updates-promo__detail {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .promo-desc__label {
+    width: 100%;
+  }
 }
