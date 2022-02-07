@@ -93,10 +93,12 @@
           </ul>
           <div class="d-flex">
             <div class="mx-2">
-              <button type="button" class="btn btn-primary--custom">Login</button>
+              <button type="button" class="btn btn-primary--custom" data-bs-toggle="modal"
+              data-bs-target="#modalLogin">Login</button>
             </div>
             <div>
-              <button type="button" class="btn btn-secondary--custom">Register</button>
+              <button type="button" class="btn btn-secondary--custom" data-bs-toggle="modal"
+              data-bs-target="#modalRegister">Register</button>
             </div>
           </div>
         </div>
@@ -104,6 +106,131 @@
     </nav>
   </header>
   <!-- END HEADER -->
+
+  <!-- Start Modal Login-->
+  <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="gpu__content register">
+            <div>
+              <img src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
+              <div class="register__label bold">Login</div>
+              <div class="register__btn-wrapper">
+                <button class="btn btn-google"><img src="./assets/icon-google.svg" alt="icon google"> Login with
+                  Google</button>
+              </div>
+              <div class="register__btn-wrapper">
+                <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
+              </div>
+              <div class="register__btn-wrapper d-flex justify-content-center">
+                <input class="form-control register" type="email" placeholder="Email Address">
+              </div>
+              <div class="register__btn-wrapper d-flex justify-content-center">
+                <input class="form-control register" type="password" placeholder="Password">
+              </div>
+              <div class="register__label medium">
+                <button class="btn btn-primary--custom register my-3">Login</button>
+              </div>
+              <div class="register__label medium blue">
+                <a href="" class="btn">Lupa Password?</a>
+              </div>
+              <div class="register__label regular-gray">Belum punya akun? <a href="">Daftar.</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Login-->
+
+  <!-- Start Modal Register-->
+  <div class="modal fade" id="modalRegister" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modalRegisterLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="gpu__content register">
+            <div>
+              <img src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
+              <div class="register__label bold">Create New Account</div>
+
+              <div class="register__btn-wrapper">
+                <button class="btn btn-google"><img src="./assets/icon-google.svg" alt="icon google"> Login with
+                  Google</button>
+              </div>
+              <div class="register__btn-wrapper">
+                <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
+              </div>
+              <div class="register__label medium">
+                <a href="" class="btn" data-bs-toggle="modal" data-bs-target="#RegisterEmail">Register with Email</a>
+              </div>
+              <div class="register__label regular">
+                <p>
+                  Dengan membuat akun, Anda menyetujui <a href="">Ketentuan Penggunaan, Kebijakan Privasi</a> dan untuk
+                  menerima
+                  berita dan pembaruan.
+                </p>
+              </div>
+              <div class="register__label regular-gray custom">Sudah punya akun? <a href="">Log in.</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Register-->
+
+  <!-- Start Modal Register With Email-->
+  <div class="modal fade" id="RegisterEmail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="RegisterEmailLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="gpu__content register">
+            <div>
+              <img src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
+              <div class="register__label bold">Create New Account</div>
+              <div class="register__btn-wrapper d-flex justify-content-center">
+                <input class="form-control register" type="email" placeholder="Email Address">
+              </div>
+              <div class="register__btn-wrapper d-flex justify-content-center">
+                <input class="form-control register" type="password" placeholder="Create Password">
+              </div>
+              <div class="register__label medium">
+                <button class="btn btn-primary--custom register my-3">Register</button>
+              </div>
+              <div class="register__label medium">
+                <a href="" class="btn">Register with Social Media</a>
+              </div>
+              <div class="register__recaptcha">
+                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+              </div>
+              <div class="register__label regular">
+                <p>
+                  Dengan membuat akun, Anda menyetujui <a href="">Ketentuan Penggunaan, Kebijakan Privasi</a> dan untuk
+                  menerima
+                  berita dan pembaruan.
+                </p>
+              </div>
+              <div class="register__label regular-gray custom">Sudah punya akun? <a href="">Log in.</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Register With Email-->
 
   <!-- START SHAREBAR -->
   <aside class="sharebar">

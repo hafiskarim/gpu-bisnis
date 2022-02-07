@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   color:#333333;
   width: 200px;
   margin-bottom: 0px;
+  box-shadow: unset;
 }
 
 .form__search {
@@ -1169,6 +1170,109 @@ aside .aside__icon.mail {
   margin-bottom: 10px;
 }
 
+
+/* REGISTER, CREATE NEW ACCOUNT, LOGIN */
+
+.modal h5 {
+  margin: unset;
+}
+
+.gpu__content.register {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.btn.btn-google {
+  color: #333333;
+  font-family: authorMedium;
+  font-size: 15px;
+  background: #ffffff;
+  border: 1px solid #D6D6D6;
+  border-radius: 7px !important;
+  width: 80%;
+}
+
+.btn.btn-google img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+.btn.btn-facebook {
+  color: #ffffff;
+  font-family: authorMedium;
+  font-size: 15px;
+  background: #1976D2;
+  width: 80%;
+}
+
+.btn.btn-facebook i {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+}
+
+.register__label.bold {
+  color: #333333;
+  font-family: authorMedium;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.register__label.medium a {
+  color: #333333;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.register__label.regular {
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.register__label a {
+  color: #1C79E5;
+}
+
+.register__label.regular-gray {
+  color: #9E9E9E;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.register__label.regular-gray span {
+  color: #009688;
+  font-family: authorMedium;
+}
+
+.form-control.register {
+  width: 80%;
+  height: 45px;
+  box-shadow: unset;
+  border-radius: 7px !important;
+}
+
+.btn.btn-primary--custom.register {
+  width: 80%;
+}
+
+.register__recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.register__label.medium.blue a {
+  color: #0C68DA !important;
+  font-family: authorMedium;
+}
+
+.register__label.regular-gray.custom a {
+  color: #009688;
+  font-family: authorMedium;
+}
 
 
 /* MEDIA QUERY */
