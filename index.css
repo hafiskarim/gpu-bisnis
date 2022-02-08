@@ -1274,6 +1274,140 @@ aside .aside__icon.mail {
   font-family: authorMedium;
 }
 
+/* MY PROFILE */
+.gpu__content.my-profile {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.wrapper__my-profile-sidebar {
+  width: 25%;
+  margin-right: 30px;
+}
+
+.wrapper__my-profile-tabs {
+  border: 1px solid #DFDFDF;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.wrapper__my-profile-nav {
+  margin: 30px 0px;
+}
+
+.wrapper__my-profile-nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #009688;
+  background-color: #ffffff;
+  border: 1px solid #009688;
+  font-family: authorMedium;
+}
+
+.wrapper__my-profile-nav .nav-pills .nav-link {
+  color: #333333;
+  border: 1px solid #D6D6D6;
+  font-family: authorMedium;
+}
+
+.wrapper__my-profile-nav .nav-pills .nav-link.profile-logout {
+  color: #FB4E4E;
+  font-family: authorMedium;
+  border: unset;
+}
+
+.wrapper__my-profile-label .label__primary {
+  color: #333333;
+  font-size: 13px;
+  font-family: authorMedium;
+  text-align: center;
+}
+
+.wrapper__my-profile-label .label__secondary {
+  color: #333333;
+  font-size: 18px;
+  font-family: authorMedium;
+  text-align: center;
+}
+
+.my-profile__img {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper__tabs-content {
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.wrapper__tabs-content label {
+  color: #333333;
+  font-size: 16px;
+  font-family: authorMedium;
+  margin-bottom: 5px;
+}
+
+.wrapper__tabs-content input {
+  background:#E8E8E8;
+  border: unset;
+  border-radius: 5px !important;
+  font-size: 14px !important;
+  color:#333333 !important;
+  width: 400px !important;
+  margin-bottom: 0px !important;
+  box-shadow: unset !important;
+}
+
+.my-profile__profile-detail {
+  margin: 20px 0px;
+}
+
+.my-profile__label {
+  color: #000000;
+  font-size: 16px;
+  font-family: authorSemiBold;
+  text-transform: uppercase;
+}
+
+.wrapper__tabs-content .btn.btn-login--custom {
+  width: 400px;
+  color: #FFFFFF;
+  background: #009688;
+  margin-bottom: 0px;
+}
+
+.gpu__content.my-profile .wishlist-books__category {
+  color: #009688;
+  font-size: 15px;
+  font-family: authorMedium;
+  margin-bottom: 15px;
+}
+
+.gpu__content.my-profile .wishlist-books__title {
+  color: #000000;
+  font-size: 20px;
+  font-family: authorMedium;
+  margin-bottom: 15px;
+}
+
+.gpu__content.my-profile .wishlist-books__author {
+  color: #1C79E5;
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.wishlist-books__detail-book {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.wrapper__tabs-content .row.custom--margin{
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {
@@ -1421,5 +1555,27 @@ aside .aside__icon.mail {
 
   .promo-desc__label {
     width: 100%;
+  }
+
+  .wrapper__tabs-content input {
+    width: 100% !important;
+  }
+
+  .gpu__content.my-profile  {
+    flex-wrap: wrap;
+  }
+
+  .wrapper__my-profile-tabs {
+    display: block;
+    padding: 20px;
+  }
+
+  .wrapper__tabs-content .btn.btn-login--custom {
+    width: 100%;
+  }
+
+  .wrapper__my-profile-sidebar {
+    width: 100%;
+    margin-right: unset;
   }
 }
