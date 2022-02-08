@@ -116,6 +116,10 @@ header .nav-item .nav-link.active {
   border-bottom: 4px solid #ED1C24;
 }
 
+header .nav-item .nav-link:hover {
+  border-bottom: 4px solid #ED1C24 !important;
+}
+
 header .nav-item .nav-link.active {
   color: #ED1C24 !important;
 }
@@ -1637,6 +1641,7 @@ aside .aside__icon.mail {
 
   header .navbar-brand {
     margin-right: 0px;
+    margin-left: 0px;
   }
 
   .btn.mobile-login {
@@ -1752,6 +1757,10 @@ aside .aside__icon.mail {
 
   .wrapper__author-books h2 {
     margin-bottom: unset;
+  }
+
+  .icon-upload {
+    left: 46%;
   }
 
 }
