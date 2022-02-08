@@ -1551,6 +1551,16 @@ aside .aside__icon.mail {
   margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
+.my-profile__img > input {
+  display: none;
+}
+
+.icon-upload {
+  position: absolute;
+  bottom: 4%;
+  left: 44%;
+}
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {

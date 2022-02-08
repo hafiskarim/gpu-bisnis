@@ -123,9 +123,12 @@
         <div class="gpu__content my-profile">
           <div class="wrapper__my-profile-sidebar">
             <aside>
-              <div class="my-profile__img">
-                <img src="./assets/profile-img.png" alt="My Profile Images">
-                <!-- <input type="file" id="img" name="img" accept="image/*"> -->
+              <div class="my-profile__img position-relative">
+                <label for="file-input">
+                  <img class="icon-upload" src="./assets/icon-upload.svg" alt="Upload Images">
+                  <img src="./assets/profile-img.png" alt="My Profile Images">
+                </label>
+                <input type="file" id="file-input" name="file-input" accept="image/*">
               </div>
               <div class="wrapper__my-profile-label">
                 <div class="label__primary">Welcome,</div>
