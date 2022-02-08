@@ -909,7 +909,6 @@ aside .aside__icon.mail {
   border: 1px solid #DFDFDF;
   border-radius: 3px;
   margin: 20px 0px;
-  height: 200px;
 }
 
 .review__label-first {
@@ -980,6 +979,150 @@ aside .aside__icon.mail {
   margin-bottom: 30px;
 }
 
+.wrapper__reviews {
+  display: flex;
+  padding: 40px 20px;
+  border-bottom: 1px solid #DFDFDF;;
+}
+
+.wrapper__reviews img {
+  max-width: 40px;
+  height: 40px;
+}
+
+.wrapper__reviews .reviews__detail {
+  margin-left: 30px;
+}
+
+.wrapper__reviews .reviews__name {
+  color: #000000;
+  font-size: 16px;
+}
+
+.wrapper__reviews .reviews__date {
+  color: #757575;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.wrapper__reviews .reviews__comment {
+  color: #686868;
+  font-size: 16px;
+}
+
+.wrapper__reviews .reviews__laporkan {
+  color: #949494;
+  font-size: 16px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.wrapper__reviews-pagination {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper__reviews-pagination .page-item.active .page-link {
+  background: #2CC0B3;
+  color: #ffffff;
+  border-color: unset;
+  font-size: 16px;
+}
+
+.wrapper__reviews-pagination .page-item .page-link {
+  color: #B5B5B5;
+  background: #F4F4F4;
+  font-size: 16px;
+  border: unset;
+}
+
+.wrapper__reviews-pagination .page-item .page-link:focus {
+  background: #2CC0B3;
+  color: #ffffff;
+}
+
+
+
+.wrapper__about-author {
+  display: flex;
+  padding: 40px 20px;
+  border-bottom: 1px solid #DFDFDF;;
+}
+
+.wrapper__about-author img {
+  max-width: 100px;
+  height: 100px;
+}
+
+.wrapper__about-author .about-author__detail {
+  margin-left: 30px;
+}
+
+.wrapper__about-author .about-author__name {
+  color: #000000;
+  font-size: 16px;
+}
+
+.wrapper__about-author .about-author__date {
+  color: #757575;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.wrapper__about-author .about-author__comment {
+  color: #686868;
+  font-size: 16px;
+}
+
+.author-books__label {
+  font-size: 20px;
+  color: #333333;
+  padding: 30px;
+}
+
+.wrapper__author-books {
+  margin-bottom: 60px;
+}
+
+.wrapper__author-books h2 {
+  font-size: 20px;
+  color: #333333;
+  font-family: authorMedium !important;
+  margin-top: unset;
+  margin-bottom: 14px;
+}
+
+.author-books__date {
+  font-size: 16px;
+  color: #333333;
+  font-family: authorMedium;
+}
+
+.wrapper__author-books-list {
+  display: flex;
+  align-items: center;
+}
+
+.author-books__detail {
+  padding-left: 20px;
+}
+
+.books__more {
+  background: #2CC0B3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrapper__author-books .row {
+  padding-left: 20px;
+}
 
 /* DETAIL UPDATES PROMO & EVENTS */
 
@@ -1578,4 +1721,27 @@ aside .aside__icon.mail {
     width: 100%;
     margin-right: unset;
   }
+
+  .wrapper__about-author {
+    flex-wrap: wrap;
+  }
+
+  .wrapper__about-author .about-author__detail {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .wrapper__author-books-list {
+    flex-wrap: wrap;
+  }
+
+  .author-books__detail {
+    padding-left: 0;
+    padding: 20px 0px;
+  }
+
+  .wrapper__author-books h2 {
+    margin-bottom: unset;
+  }
+
 }
