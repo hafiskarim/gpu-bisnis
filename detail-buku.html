@@ -285,8 +285,15 @@
               alt="Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)">
             <div class="mt-3">
               <button class="detail-buku__button primary--custom btn">View cover</button>
-              <button class="detail-buku__button secondary--custom btn">Buy this book <i
-                  class="far fa-arrow-alt-circle-down"></i></button>
+              <button class="detail-buku__button secondary--custom btn" role="button" id="buybook"
+                data-bs-toggle="dropdown" aria-expanded="false">Buy this book <img src="/assets/icon-down.svg" alt="Icon Down"></button>
+              <ul class="dropdown-menu custom--width" aria-labelledby="buybook">
+                <li><a class="dropdown-item" href="#">Buy on Gramedia.com <i class="fas fa-arrow-right custom--color-blue"></i></a></li>
+                <li><a class="dropdown-item" href="#">Buy on Shopee Gramedia Official <i class="fas fa-arrow-right custom--color-blue"></i></a></li>
+                <li><a class="dropdown-item" href="#">Buy on Shopee GPU <i class="fas fa-arrow-right custom--color-blue"></i></a></li>
+                <li><a class="dropdown-item" href="#">Buy on Tokopedia <i class="fas fa-arrow-right custom--color-blue"></i></a></li>
+                <li><a class="dropdown-item" href="#">Buy on Gramedia Digital <i class="fas fa-arrow-right custom--color-blue"></i></a></li>
+              </ul>
             </div>
           </div>
           <div class="detail-buku__container">
@@ -315,7 +322,7 @@
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-summary" role="tabpanel"
                   aria-labelledby="pills-summary-tab">
-                  <p>
+                  <p class="text--transparent">
                     Nganteur Tineung, Ngumbar Kelar téh sasatna lalakon kaleukeun jeung kagagal, kaunggul jeung
                     kapeurih, kamapanan jeung kaharoong. Juhaeri, nu gumelar di imah ngupuk sabru-brueun rubuh di
                     wewengkon Pinangraja, Majalengka, ancrub jeung teuleum dina sagara obsési anu tan jugjugan.
@@ -324,18 +331,20 @@
                     panggedéna di sadunya. Atuh dijungjung lungguh jadi adjunct professor di salasahiji universitas
                     pangkahotna di Amerika gé lain
                   </p>
-                  <p>
+                  <p id="more">
                     Majalengka, ancrub jeung teuleum dina sagara obsési anu tan jugjugan.
                     Pamustunganana jog ka New Jersey, Amerika, ka dunya nu sama sakali teu kagambar méméhna.
                     Teu kacipta ti anggalna, Juhaeri bakal diangkat jadi vice president di salasahiji pausahan farmasi
                     panggedéna di sadunya. Atuh dijungjung lungguh jadi adjunct professor di salasahiji universitas
                     pangkahotna di Amerika gé lain
-                  </p>
-                  <p>
                     Juhaeri bakal diangkat jadi vice president di salasahiji pausahan farmasi
                     panggedéna di sadunya. Atuh dijungjung lungguh jadi adjunct professor di salasahiji universitas
                     pangkahotna di Amerika gé lain
                   </p>
+                  <!-- <button id="toggle">Read More</button> -->
+                  <div id="toggle" class="wrapper__btn-readmore">
+                    <i class="fas fa-angle-double-down updown"></i>
+                  </div>
                 </div>
                 <div class="tab-pane fade position-relative" id="pills-details" role="tabpanel"
                   aria-labelledby="pills-details-tab">

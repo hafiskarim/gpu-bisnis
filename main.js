@@ -55,4 +55,20 @@ $(document).ready(function () {
       $dropdown.off("mouseenter mouseleave");
     }
   });
+
+  // button read more di detail buku
+  $("#toggle").click(function() {
+    var elem = $('#toggle').find('.fas.fa-angle-double-down')
+    if (elem.length == 1) {
+      $(".updown").removeClass("fa-angle-double-down")
+      $(".updown").addClass("fa-angle-double-up")
+      $(".text--transparent").addClass("non")
+      $("#more").slideDown();
+    } else {
+      $(".updown").addClass("fa-angle-double-down")
+      $(".updown").removeClass("fa-angle-double-up")
+      $(".text--transparent").removeClass("non")
+      $("#more").slideUp();
+    }
+  });
 })
