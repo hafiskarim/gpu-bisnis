@@ -1814,6 +1814,10 @@ aside .aside__icon.mail {
     flex-wrap: wrap;
   }
 
+  .gpu__content.related-books .custom--flex-wrap {
+    flex-wrap: wrap;
+  }
+
   aside.sharebar {
     display: none;
   }
