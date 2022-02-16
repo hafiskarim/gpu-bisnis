@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg--custom {
   background: #ffffff;
   height: 80px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .btn.btn-primary--custom {
@@ -1812,7 +1813,11 @@ aside .aside__icon.mail {
   }
   
   .carousel-item img {
-    height: 450px;
+    height: 346px;
+  }
+
+  header .navbar {
+    padding-bottom: unset;
   }
 
   .gpu__content.new-release {
