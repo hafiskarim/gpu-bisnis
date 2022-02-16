@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-light .navbar-toggler {
   border-color: #ffffff;
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .navbar-light .navbar-toggler:focus {
@@ -78,13 +79,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   font-size: 14px;
   color:#333333;
-  width: 200px;
+  width: 100%;
   margin-bottom: 0px;
   box-shadow: unset;
 }
 
 .form__search {
-  width: auto;
+  width: 100%;
   margin-right: 30px;
 }
 
@@ -97,16 +98,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   background: #009688;
   margin-bottom: 0px;
+  font-size: 14px;
+  font-family: authorMedium;
 }
 
 .btn.btn-secondary--custom {
   color: #009688;
   background: #DFDCEA;
   margin-bottom: 0px;
+  font-size: 14px;
+  font-family: authorMedium;
 }
 
 header .nav-item {
   margin-right: 20px;
+}
+
+header .navbar-nav {
+  display: flex;
+  align-items: center;
 }
 
 header .nav-item.custom--mr {
@@ -131,6 +141,7 @@ header .nav-item .nav-link {
   color: #333333 !important;
   text-transform: uppercase;
   text-align: center;
+  line-height: 17px;
 }
 
 header .navbar-nav .show > .nav-link {
@@ -585,6 +596,14 @@ footer .wrapper__main-footer {
   background: #F5F1F1;
   padding: 30px 0px;
   margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-link-footer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__icon {
@@ -672,9 +691,9 @@ footer .wrapper__main-footer {
 }
 
 .secondary-footer__link a {
+  color: #501214;
   font-family: authorMedium;
   font-size: 18px;
-  color: #635858;
 }
 
 .secondary-footer--wrap {
@@ -1743,8 +1762,14 @@ aside .aside__icon.mail {
     border-bottom: unset;
   }
 
+  header .navbar-nav {
+    display: block;
+    align-items: unset;
+  }
+
   .form__search {
     margin-right: 0px;
+    width: auto;
   }
 
   .logo__gpu-desktop {
@@ -1767,6 +1792,7 @@ aside .aside__icon.mail {
   }
   .form-control.custom--input {
     margin-bottom: 0px;
+    width: 200px;
   }
 
   .navbar-light .navbar-toggler {
@@ -1777,7 +1803,7 @@ aside .aside__icon.mail {
     top: 27%;
   }
 
-  .btn.btn-primary--custom {
+  header .btn.btn-primary--custom {
     display: none;
   }
 
@@ -1887,14 +1913,35 @@ aside .aside__icon.mail {
     width: 100%;
   }
 
+  footer {
+    border-top: unset;
+    margin-top: unset;
+  }
+
+  .footer__list {
+    margin-top: 30px;
+  }
+
+  .wrapper__secondary-footer {
+    flex-direction: column-reverse;
+  }
+
+  .flex-link-footer {
+    justify-content: center;
+  }
+
+  .secondary-footer__desc {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
 }
 
 @media screen 
   and (min-device-width: 1000px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    header .nav-item {
-      margin-right: 0px;
+    header .navbar-nav {
       display: flex;
       align-items: center;
     }
@@ -1906,8 +1953,70 @@ aside .aside__icon.mail {
       margin-right: 10px;
       margin-left: 10px;
     }
+}
 
+
+@media screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1300px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
     .form-control.custom--input {
-      width: 180px;
+      width: 100%;
     }
+
+    .form__search {
+      width: 80%;
+    }
+    .bg--custom {
+      background: #ffffff;
+      height: auto;
+    }
+    header .btn.btn-primary--custom {
+      display: none;
+    }
+    header .btn.btn-secondary--custom {
+      display: none;
+    }
+    .logo__gpu-mobile {
+      display: block;
+    }
+
+    .logo__gpu-desktop {
+      display: none;
+    }
+
+    .btn.mobile-login {
+      display: block;
+      background: #009688;
+      margin-bottom: 0px;
+    }
+}
+
+
+@media (min-width: 1300px){
+  .navbar-expand-custom {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
+      flex-direction: row;
+  }
+  .navbar-expand-custom .dropdown-menu {
+      position: absolute;
+  }
+  .navbar-expand-custom .nav-link {
+      padding-right: .5rem;
+      padding-left: .5rem;
+  }
+  .navbar-expand-custom > .container {
+      flex-wrap: nowrap;
+  }
+  .navbar-expand-custom .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+  }
+  .navbar-expand-custom .navbar-toggler {
+      display: none;
+  }
 }
