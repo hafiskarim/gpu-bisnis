@@ -9,9 +9,12 @@ $(document).ready(function () {
       0: {
         items: 1
       },
-      600: {
-        items: 3
+      768: {
+        items: 2
       },
+      1024: {
+        items: 3
+      }
     }
   })
   $('.owl-carousel').owlCarousel({
@@ -22,15 +25,26 @@ $(document).ready(function () {
       0: {
         items: 1
       },
-      600: {
+      768: {
+        items: 2
+      },
+      1024: {
         items: 3
       },
-      1000: {
+      1024: {
         stagePadding: 80
       }
     }
   })
 
+  // best selling book for ipad/tablet screen
+  var mediaQuery =  window.matchMedia('screen and (min-width: 768px)  and (max-width: 1024px)');
+  if (mediaQuery.matches) {
+    $('.col-custom-5').addClass('col-md-6')
+    $('bestselling__wrapper').addClass('row')
+  }
+
+  // dropdown navbar
   const $dropdown = $(".dropdown");
   const $dropdownToggle = $(".dropdown-toggle");
   const $dropdownMenu = $(".dropdown-menu");

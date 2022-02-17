@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form__search {
-  width: 100%;
+  width: 33%;
   margin-right: 30px;
 }
 
@@ -424,6 +424,7 @@ i.icon--custom-position {
   width: 170px;
   margin-top: 15px;
   margin-bottom: 30px;
+  height: 140px;
 }
 
 .gpu__content.bestselling img {
@@ -431,7 +432,10 @@ i.icon--custom-position {
 }
 
 .bestselling__wrapper {
+  display: flex;
+  align-items: flex-end;
   justify-content: space-between;
+  position: relative;
 }
 
 .gpu__content.quotes {
@@ -487,6 +491,10 @@ i.icon--custom-position {
   color: #333333;
 }
 
+.gpu__content.update-book a:hover {
+  color: #9B1A1A;
+}
+
 .update-book.title-book {
   width: 270px;
   font-size: 20px;
@@ -499,6 +507,7 @@ i.icon--custom-position {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 22px;
+  height: 44px;
 }
 
 .update-book.title-book:hover {
@@ -618,7 +627,10 @@ footer .wrapper__main-footer {
   color: #333333;
   padding-left: 20px;
   line-height: 22px;
+}
 
+a .footer__desc.email:hover {
+  text-decoration: underline;
 }
 
 .footer__detail {
@@ -644,6 +656,10 @@ footer .wrapper__main-footer {
   color: #333333;
   font-family: authorMedium;
   text-transform: uppercase;
+}
+
+.footer__link-list-item a:hover {
+  color: #009688;
 }
 
 .footer__icon-secondary {
@@ -1698,7 +1714,7 @@ aside .aside__icon.mail {
 
 
 /* MEDIA QUERY */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .bestselling__wrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -1970,7 +1986,7 @@ aside .aside__icon.mail {
     }
 
     .form__search {
-      width: 80%;
+      width: 60%;
     }
     .bg--custom {
       background: #ffffff;
@@ -2023,5 +2039,40 @@ aside .aside__icon.mail {
   }
   .navbar-expand-custom .navbar-toggler {
       display: none;
+  }
+}
+
+/* Media Query for high resolution Tablets or Ipads */
+@media (min-width: 768px) and (max-width: 1024px){
+  .update-book.preview {
+    margin-bottom: 40px;
+  }
+  .bestselling__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 60px !important;
+  }
+  .book__wrapper {
+    position: relative;
+  }
+
+  .col-custom-5 {
+    margin-bottom: 20px;
+  }
+
+  .gpu__content.bestselling img {
+    width: 80%;
+  }
+
+  .gpu__content.bestselling {
+    margin-bottom: 0px;
+  }
+  
+  .author-ofthemonth--flex-wrap {
+    margin-top: 20px;
+  }
+
+  .footer__desc.email {
+    word-break: break-all;
   }
 }
