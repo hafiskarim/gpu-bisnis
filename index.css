@@ -2122,4 +2122,9 @@ aside .aside__icon.mail {
   .updates-promo__detail {
     margin-top: 30px;
   }
+
+  .bg--custom {
+    background: #ffffff;
+    height: auto;
+  }
 }
