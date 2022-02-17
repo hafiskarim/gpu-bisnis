@@ -2075,4 +2075,8 @@ aside .aside__icon.mail {
   .footer__desc.email {
     word-break: break-all;
   }
+
+  .btn.btn__footer-email {
+    font-size: 14px;
+  }
 }
