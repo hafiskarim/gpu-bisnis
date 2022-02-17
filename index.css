@@ -2161,3 +2161,12 @@ aside .aside__icon.mail {
     margin-top: 90px;
   }
 }
+
+@media screen 
+  and (min-device-width: 1300px) 
+  and (max-device-width: 1400px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .form__search {
+      width: 170px;
+    }
+  }
