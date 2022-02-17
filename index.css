@@ -188,6 +188,10 @@ header .navbar-brand {
   display: none;
 }
 
+.carousel {
+  margin-top: 80px;
+}
+
 .carousel-control-next, .carousel-control-prev {
   opacity: 1;
 }
@@ -1741,6 +1745,10 @@ aside .aside__icon.mail {
     justify-content: center;
   }
 
+  .carousel {
+    margin-top: 10px;
+  }
+
   .bg--custom {
     background: #ffffff;
     height: auto;
@@ -2148,5 +2156,8 @@ aside .aside__icon.mail {
     display: block;
     background: #009688;
     margin-bottom: 0px;
+  }
+  .carousel {
+    margin-top: 90px;
   }
 }
