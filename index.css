@@ -103,6 +103,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: authorMedium;
 }
 
+.btn.btn-primary--custom-2 {
+  color: #FFFFFF;
+  background: #009688;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
 .btn.btn-secondary--custom {
   color: #009688;
   background: #DFDCEA;
@@ -1394,8 +1401,16 @@ aside .aside__icon.mail {
   font-family: authorSemiBold;
 }
 
-.all-updates__label.regular {
+.all-updates__label a {
+  color: #333333;
+}
+
+.all-updates__label.regular a {
   font-size: 15px;
+}
+
+.all-updates__label.regular a:hover {
+  color: #9B1A1A;
 }
 
 .all-updates__item {
@@ -1453,8 +1468,14 @@ aside .aside__icon.mail {
   color: #333333;
 }
 
+.gpu__content.other-promo a:hover {
+  color: #9B1A1A;
+}
+
 .gpu__content.updates-promo .btn.btn-primary {
   margin-bottom: 10px;
+  font-size: 18px;
+  width: 212px;
 }
 
 .dropdown-menu.custom--width {
@@ -2078,5 +2099,27 @@ aside .aside__icon.mail {
 
   .btn.btn__footer-email {
     font-size: 14px;
+  }
+
+  .detail-buku .detail-buku-wrap {
+    flex-wrap: wrap;
+  }
+
+  .gpu__content.related-books .custom--flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .update-promo__img img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .gpu__content.updates-promo .custom--flex-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .updates-promo__detail {
+    margin-top: 30px;
   }
 }
