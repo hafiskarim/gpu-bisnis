@@ -20,7 +20,7 @@
   <header class="container-fluid">
     <nav class="navbar navbar-expand-custom fixed-top navbar-light bg--custom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img class="logo__gpu-desktop" src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
           <img class="logo__gpu-mobile" src="./assets/logo-gpu-mobile.svg" alt="Gramedia Pustaka Utama" />
         </a>
@@ -77,8 +77,8 @@
               <a class="nav-link dropdown-toggle" href="#updates" id="dropdownUpdates" data-bs-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Updates</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownUpdates">
-                <li><a class="dropdown-item" href="#">Promo</a></li>
-                <li><a class="dropdown-item" href="#">Events</a></li>
+                <li><a class="dropdown-item" href="./updates-promo.html">Promo</a></li>
+                <li><a class="dropdown-item" href="./updates-event.html">Events</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -91,19 +91,20 @@
               </ul>
             </li>
           </ul>
-          <div class="d-flex wrapper__user-login">
+          <div class="d-flex">
             <div class="mx-2">
-              <div class="user-login__label">Welcome,</div>
-              <div class="user-login__name">Fulan</div>
+              <button type="button" class="btn btn-primary--custom" data-bs-toggle="modal"
+                data-bs-target="#modalLogin">Login</button>
             </div>
             <div>
-              <img class="user-login__img" src="./assets/icon-user.svg" alt="user icon">
+              <button type="button" class="btn btn-secondary--custom" data-bs-toggle="modal"
+                data-bs-target="#modalRegister">Register</button>
             </div>
           </div>
         </div>
       </div>
     </nav>
-  </header>
+  </header>>
   <!-- END HEADER -->
 
   <!-- START BREADCRUMB -->
@@ -173,7 +174,8 @@
           </div>
           <div class="wrapper__my-profile-tabs">
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                aria-labelledby="v-pills-profile-tab">
                 <div class="wrapper__tabs-content">
                   <div class="my-profile__label">Profile Detail</div>
                   <div class="my-profile__profile-detail">
