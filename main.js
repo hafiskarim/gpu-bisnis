@@ -85,4 +85,11 @@ $(document).ready(function () {
       $("#more").slideUp();
     }
   });
+
+  // collapse icon sidebar
+  $('.list-group-item').on('click', function() {
+    $('.fas', this)
+      .toggleClass('fa-angle-down')
+      .toggleClass('fa-angle-up');
+  });
 })
