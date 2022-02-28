@@ -20,7 +20,7 @@
   <header class="container-fluid">
     <nav class="navbar navbar-expand-custom fixed-top navbar-light bg--custom">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img class="logo__gpu-desktop" src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
           <img class="logo__gpu-mobile" src="./assets/logo-gpu-mobile.svg" alt="Gramedia Pustaka Utama" />
         </a>
@@ -56,13 +56,13 @@
               <a class="nav-link dropdown-toggle" href="#books" id="dropdownBooks" role="button" data-toggle="dropdown"
                 aria-haspopup="true" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownBooks">
-                <li><a class="dropdown-item" href="#">Fiction</a></li>
-                <li><a class="dropdown-item" href="#">Non Fiction</a></li>
-                <li><a class="dropdown-item" href="#">Cookbook</a></li>
+                <li><a class="dropdown-item" href="./list-book-categories.html">Fiction</a></li>
+                <li><a class="dropdown-item" href="./list-book-categories.html">Non Fiction</a></li>
+                <li><a class="dropdown-item" href="./list-book-categories.html">Cookbook</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#authors">Authors</a>
+              <a class="nav-link" href="./list-authors.html">Authors</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#blog" href="#books" id="dropdownBlog" data-bs-toggle="dropdown"
@@ -77,8 +77,8 @@
               <a class="nav-link dropdown-toggle" href="#updates" id="dropdownUpdates" data-bs-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Updates</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownUpdates">
-                <li><a class="dropdown-item" href="#">Promo</a></li>
-                <li><a class="dropdown-item" href="#">Events</a></li>
+                <li><a class="dropdown-item" href="./updates-promo.html">Promo</a></li>
+                <li><a class="dropdown-item" href="./updates-event.html">Events</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -91,13 +91,14 @@
               </ul>
             </li>
           </ul>
-          <div class="d-flex wrapper__user-login">
+          <div class="d-flex">
             <div class="mx-2">
-              <div class="user-login__label">Welcome,</div>
-              <div class="user-login__name">Fulan</div>
+              <button type="button" class="btn btn-primary--custom" data-bs-toggle="modal"
+                data-bs-target="#modalLogin">Login</button>
             </div>
             <div>
-              <img class="user-login__img" src="./assets/icon-user.svg" alt="user icon">
+              <button type="button" class="btn btn-secondary--custom" data-bs-toggle="modal"
+                data-bs-target="#modalRegister">Register</button>
             </div>
           </div>
         </div>

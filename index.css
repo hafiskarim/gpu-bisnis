@@ -1991,6 +1991,10 @@ aside .aside__icon.mail {
   height: 65px;
 }
 
+.item-authors__book-title:hover {
+  color: #9B1A1A;
+}
+
 .item-authors__socmed {
   display: flex;
   justify-content: center;
@@ -2039,6 +2043,117 @@ aside .aside__icon.mail {
 
 .wrapper__search-authors {
   position: relative;
+}
+
+
+/* DETAIL AUTHOR */
+.gpu__content.detail-authors .wrapper__detail-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gpu__content.detail-authors {
+  margin-top: 40px;
+}
+
+.gpu__content.detail-authors .form__search {
+  width: 100%;
+}
+
+.wrapper__sidebar-author .list-authors__label {
+  margin: 40px 0px;
+}
+
+.wrapper__sidebar-author .item-authors__name {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.other-author__socmed {
+  width: 38px;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+.wrapper__sidebar-author .other-author__img img {
+  height: 100%;
+}
+
+.other-author__socmed img {
+  width: 20px;
+}
+
+.wrapper__other-author {
+  margin-left: 10px;
+}
+
+.other-author__img {
+  margin-bottom: 20px;
+}
+
+.item-authors__name.custom--padding {
+  margin: 0px 0px 5px 0px;
+}
+
+.row.author .img-author {
+  margin-bottom: 10px;
+}
+
+.row.author .item-authors__socmed {
+  background: #F5F5F5;
+}
+
+.content__detail-author {
+  margin-right: 60px;
+}
+
+.gpu__content.detail-authors .carousel__category {
+  color: #009688;
+  font-size: 15px;
+  font-family: authorMedium;
+  margin-bottom: 15px;
+}
+
+.gpu__content.detail-authors .carousel__title {
+  color: #000000;
+  font-size: 20px;
+  font-family: authorMedium;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 22px;
+}
+
+.gpu__content.detail-authors .carousel__title:hover {
+  color: #9B1A1A;
+}
+
+.gpu__content.detail-authors .carousel__author {
+  color: #1C79E5;
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.content__detail-author .wrapper__list-authors-label {
+  margin-bottom: 40px;
+}
+
+.item-authors__desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.item-authors__desc span {
+  font-family: authorSemiBold;
 }
 
 /* MEDIA QUERY */
@@ -2374,6 +2489,10 @@ aside .aside__icon.mail {
     justify-content: center;
   }
 
+  .content__detail-author {
+    margin-right: 20px;
+    margin-left: 40px;
+  }
 }
 
 @media screen 
@@ -2580,6 +2699,11 @@ aside .aside__icon.mail {
 
   .wrapper__list-categories-pagination {
     margin-left: 0;
+  }
+
+  .content__detail-author {
+    margin-right: 20px;
+    margin-left: 40px;
   }
   
 }
