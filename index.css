@@ -2321,6 +2321,70 @@ aside .aside__icon.mail {
   margin-left: 160px;
 }
 
+/* LIST NEWS */
+.row.custom--maxwidth {
+  max-width: unset;
+  margin-left: 0;
+  align-items: unset;
+}
+
+.wrapper__list-buku .row.custom--maxwidth img {
+  margin-right: 30px;
+}
+
+.wrapper__list-buku .row.custom--maxwidth .update-book.title-book {
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper__list-buku .row.custom--maxwidth .update-book.category {
+  width: 100%;
+}
+
+.wrapper__list-buku .row.custom--maxwidth .update-book.preview {
+  width: 400px;
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset; 
+  overflow: unset;
+  text-overflow: unset;
+}
+
+.dot-custom {
+  padding: 0px 15px;
+}
+
+
+/* LIST REVIEWS */
+.reviews-list__name {
+  font-size: 20px;
+  font-family: authorMedium;
+  line-height: 22px;
+  color: #000000;
+}
+
+.reviews-list__name:hover {
+  color: #9B1A1A;
+}
+
+.reviews-list__desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin: 20px 0px;
+}
+
+.reviews-list__more {
+  font-size: 16px;
+  line-height: 22px;
+  color: #009688;
+}
+
+.wrapper__reviews-list {
+  display: flex;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 767px) {
   .bestselling__wrapper {
@@ -2680,6 +2744,27 @@ aside .aside__icon.mail {
     margin: 0;
   }
 
+  .wrapper__list-buku .row.custom--maxwidth .update-book.preview {
+    width: 100%;
+  }
+
+  .wrapper__list-buku .row.custom--maxwidth .update-book.title-book {
+    margin-top: 15px;
+  }
+
+  .wrapper__list-buku.custom--margin {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .wrapper__reviews-list {
+    flex-wrap: wrap;
+  }
+
+  .reviews-list__name {
+    margin-top: 10px;
+  }
+
 }
 
 @media screen 
@@ -2899,6 +2984,22 @@ aside .aside__icon.mail {
 
   .wrapper__list-categories-pagination.custom--margin {
     margin: 20px;
+  }
+
+  .wrapper__list-buku .row.custom--maxwidth .update-book.title-book {
+    margin-top: 15px;
+  }
+
+  .wrapper__list-buku .row.custom--maxwidth .update-book.preview {
+    width: 100%;
+  }
+
+  .wrapper__reviews-list {
+    flex-wrap: wrap;
+  }
+
+  .reviews-list__name {
+    margin-top: 10px;
   }
   
 }
