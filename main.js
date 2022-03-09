@@ -16,7 +16,7 @@ $(document).ready(function () {
         items: 3
       }
     }
-  })
+  });
   $('.owl-carousel').owlCarousel({
     margin: 10,
     nav: true,
@@ -35,7 +35,7 @@ $(document).ready(function () {
         stagePadding: 80
       }
     }
-  })
+  });
 
   // best selling book for ipad/tablet screen
   var mediaQuery =  window.matchMedia('screen and (min-width: 768px)  and (max-width: 1024px)');
@@ -92,4 +92,18 @@ $(document).ready(function () {
       .toggleClass('fa-angle-down')
       .toggleClass('fa-angle-up');
   });
+
+  // Milestones component
+  var activeMilestones = $('.owl-item');
+  activeMilestones.click(function() {
+    $(this).toggleClass('active--custom')
+    activeMilestones.not(this).removeClass('active--custom');
+  });
+
+  // Button International Partnership
+  $('.btn.send-message.custom--width').on('click', function() {
+    if ($('.btn.send-message.custom--width').attr('aria-expanded') === "true") {
+      $('.btn.send-message.custom--width').addClass('hide-btn');
+    }
+  })
 })
