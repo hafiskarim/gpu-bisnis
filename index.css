@@ -2748,6 +2748,47 @@ aside .aside__icon.mail {
   margin: 20px 0px;
 }
 
+/* CAREER */
+.gpu__content.career h2 {
+  margin: 20px 0px;
+  font-size: 30px;
+  font-family: authorMedium !important;
+  color: #000000;
+  line-height: 33px;
+}
+
+.gpu__content.career h3 {
+  margin: 0px;
+  font-size: 20px;
+  font-family: authorMedium !important;
+  color: #000000;
+  line-height: 22px;
+}
+
+.gpu__content.career .btn.send-message {
+  width: auto;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.career__position-available {
+  font-size: 18px;
+  color: #333333;
+  line-height: 20px;
+}
+
+.wrapper__career {
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.career__desc {
+  font-size: 16px;
+  color: #333333;
+  line-height: 22px;
+}
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 767px) {
@@ -3149,6 +3190,10 @@ aside .aside__icon.mail {
   .international-partnership__img {
     width: 100%;
     padding: 0px 30px;
+  }
+
+  .wrapper__form-joinus input {
+    width: 100% !important;
   }
 
 }
