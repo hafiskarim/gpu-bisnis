@@ -265,9 +265,19 @@ i.icon--custom-position {
   font-family: authorMedium;
   margin-bottom: 15px;
   line-height: 22px;
+  width: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.gpu__content.new-release .carousel__title:hover {
+/* .gpu__content.new-release .carousel__title:hover {
+  color: #9B1A1A;
+} */
+
+.gpu__content.new-release .item:hover .carousel__title {
   color: #9B1A1A;
 }
 
@@ -355,6 +365,10 @@ i.icon--custom-position {
   font-family: authorMedium;
 }
 
+.gpu__content.coming-soon .coming-soon__more:hover {
+  text-decoration: underline;
+}
+
 .fa-arrow-right.custom--color-white {
   position: relative;
   bottom: -2px;
@@ -369,9 +383,14 @@ i.icon--custom-position {
   font-family: authorMedium;
   margin-bottom: 15px;
   line-height: 22px;
+  width: 170px;
 }
 
-.gpu__content.coming-soon .carousel__title:hover {
+/* .gpu__content.coming-soon .carousel__title:hover {
+  text-decoration: underline;
+} */
+
+.gpu__content.coming-soon .item .carousel__title:hover {
   text-decoration: underline;
 }
 
@@ -426,6 +445,11 @@ i.icon--custom-position {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .gpu__content.bestselling .carousel__title:hover {
@@ -453,7 +477,7 @@ i.icon--custom-position {
 .bestselling__wrapper {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
 }
 
@@ -1931,7 +1955,7 @@ aside .aside__icon.mail {
 }
 
 .col-custom-5 {
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
 .wrapper__list-buku .row {
@@ -2806,6 +2830,14 @@ aside .aside__icon.mail {
     height: auto;
   }
 
+  .gpu__content.new-release .carousel__title {
+    width: 170px;
+  }
+
+  .col-custom-5 {
+    margin-right: 20px;
+  }
+
   .book__wrapper {
     position: relative;
     margin-right: 20px;
@@ -2919,7 +2951,7 @@ aside .aside__icon.mail {
 
   .gpu__content.new-release {
     position: relative;
-    bottom: 100px;
+    /* bottom: 100px; */
   }
 
   .detail-buku .detail-buku-wrap {
@@ -3294,6 +3326,10 @@ aside .aside__icon.mail {
   }
   .book__wrapper {
     position: relative;
+  }
+
+  .gpu__content.new-release .carousel__title {
+    width: 170px;
   }
 
   .col-custom-5 {
