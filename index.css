@@ -934,6 +934,7 @@ aside .aside__icon.mail {
 
 .detail-buku__img img {
   max-width: 320px;
+  max-height: 480px;
 }
 
 .detail-buku__category {
@@ -955,6 +956,8 @@ aside .aside__icon.mail {
   font-size: 30px;
   color: #000000;
   font-family: authorMedium !important;
+  line-height: 40px;
+  margin: 5px 0px !important;
 }
 
 .detail-buku__author {
