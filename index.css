@@ -1837,6 +1837,7 @@ aside .aside__icon.mail {
 
 .gpu__content.list-buku .row.list-buku-row img {
   width: 170px;
+  height: 100%;
 }
 
 .gpu__content.list-buku .wrapper__sidebar-category h2 {
