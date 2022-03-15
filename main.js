@@ -1,9 +1,27 @@
 $(document).ready(function () {
-  $('.owl-carousel.autoplay').owlCarousel({
+  $('#carousel-quote').owlCarousel({
     autoplay: true,
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1024: {
+        items: 1
+      }
+    }
+  });
+  $('#carousel-newrelease').owlCarousel({
+    autoplay: true,
+    loop: true,
+    margin: 10,
+    nav: false,
     dots: true,
     responsive: {
       0: {
