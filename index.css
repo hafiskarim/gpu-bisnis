@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   border: unset;
   border-radius: 5px;
   font-size: 14px;
-  color:#333333;
+  color:#000000;
   width: 100%;
   margin-bottom: 0px;
   box-shadow: unset;
@@ -767,6 +767,7 @@ a .footer__desc.email:hover {
   padding: 15px !important;
   height: 44px !important;
   margin-bottom: 35px !important;
+  color: #000000 !important;
 }
 
 .btn.btn__footer-email {
@@ -2060,6 +2061,7 @@ aside .aside__icon.mail {
   border: 1px solid #ced4da !important;
   border-radius: 5px !important;
   box-shadow: unset !important;
+  color: #000000 !important;
 }
 
 .search-icon-custom {
@@ -2082,6 +2084,10 @@ aside .aside__icon.mail {
   margin-bottom: 40px;
 }
 
+.gpu__content.list-authors .wrapper__item-authors .wrapper__detail-authors img {
+  width: 101px;
+}
+
 .item-authors__name:hover {
   text-decoration: underline;
 }
@@ -2100,6 +2106,11 @@ aside .aside__icon.mail {
   margin-bottom: 10px;
   line-height: 22px;
   height: 65px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .item-authors__book-title:hover {
@@ -2142,8 +2153,7 @@ aside .aside__icon.mail {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .list-authors__label-more {
@@ -2188,11 +2198,15 @@ aside .aside__icon.mail {
 .other-author__socmed {
   width: 38px;
   height: 38px;
-  background: #FFFFFF;
+  background: #F5F5F5;
   border: 1px solid #D9D9D9;
   border-radius: 5px;
   margin: 0px 5px;
   text-align: center;
+}
+
+.other-author__socmed:hover {
+  background: #FFFFFF;
 }
 
 .wrapper__sidebar-author .other-author__img img {
@@ -2332,7 +2346,7 @@ aside .aside__icon.mail {
   border: 1px solid #E3E3E3;
   border-radius: 5px;
   font-size: 14px;
-  color: #333333;
+  color: #000000;
   width: 100%;
   margin-bottom: 0px;
   box-shadow: unset;
@@ -2503,6 +2517,7 @@ aside .aside__icon.mail {
   border: unset !important;
   box-shadow: unset !important;
   margin-bottom: 20px !important;
+  color: #000000 !important;
 }
 
 .wrapper__form-contactus textarea {
@@ -2709,6 +2724,10 @@ aside .aside__icon.mail {
   margin: 20px 0px;
 }
 
+.about-us__ourteam img {
+  width: 90%;
+}
+
 .ourteam__navtabs .nav {
   margin-left: 0;
 }
@@ -2738,20 +2757,12 @@ aside .aside__icon.mail {
   margin: 10px 0px;
 }
 
-.ourteam__name:hover {
-  text-decoration: underline;
-}
-
 .ourteam__job {
   font-size: 15px;
   font-family: authorMedium;
   color: #333333;
   line-height: 17px;
   margin-bottom: 30px;
-}
-
-.ourteam__job:hover {
-  text-decoration: underline;
 }
 
 .ourteam__navtabs .row {
@@ -3579,6 +3590,9 @@ aside .aside__icon.mail {
 
 @media (min-width: 992px) { 
   .gpu__content.list-buku .row.list-buku-row .col-lg-3 {
+    width: 20%;
+  }
+  .gpu__content.list-authors .row .col-lg-3 {
     width: 20%;
   }
 }
