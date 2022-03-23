@@ -425,7 +425,7 @@
                       iaculis pellentesque egestas sit volutpat. Consequat morbi ipsum fusce lectus ultrices est
                       viverra. Aliquet vitae arcu, ipsum sed augue turpis faucibus.
                     </p>
-                    <div class="reviews__laporkan">Laporkan</div>
+                    <div class="reviews__laporkan"><a href="">Laporkan</a></div>
                   </div>
                 </div>
                 <div class="wrapper__reviews">
@@ -441,32 +441,49 @@
                       iaculis pellentesque egestas sit volutpat. Consequat morbi ipsum fusce lectus ultrices est
                       viverra. Aliquet vitae arcu, ipsum sed augue turpis faucibus.
                     </p>
-                    <div class="reviews__laporkan">Laporkan</div>
+                    <div class="reviews__laporkan"><a href="">Laporkan</a></div>
                   </div>
                 </div>
 
                 <!-- Pagination -->
-                <div class="wrapper__reviews-pagination">
-                  <nav aria-label="reviews-pagination">
-                    <ul class="pagination">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                          < </a>
-                      </li>
-                      <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#"> > </a>
-                      </li>
-                    </ul>
-                  </nav>
+                <div class="d-flex justify-content-center">
+                  <div class="wrapper__list-categories-pagination mt-4" style="margin-left: 0px;">
+                    <nav aria-label="list-categories">
+                      <ul class="pagination">
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#"> <i class="fas fa-arrow-right custom--fontsize"></i> </a>
+                        </li>
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="fas fa-arrow-right custom--fontsize"></i>| </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
 
+                <div class="collapse review-book" id="collapseExample">
+                  <div class="wrapper__reviews-book">
+                    <img src="./assets/review-img.png" alt="My Profile Image">
+                    <div class="reviews-book__detail">
+                      <div class="reviews-book__name">Your review</div>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ketik di sini ..."></textarea>
+                      <div class="d-flex justify-contents-start">
+                        <button class="btn btn-primary" type="button">Submit Review</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="d-flex justify-content-center mt-3">
-                  <button class="btn btn-primary">Tulis Review</button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Tulis Review
+                  </button>
                 </div>
               </div>
             </div>

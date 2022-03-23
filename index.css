@@ -634,6 +634,7 @@ i.icon--custom-position {
 .gpu__content.author-ofthemonth img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
 }
 
 .gpu__content.author-ofthemonth h2 {
@@ -825,6 +826,14 @@ aside.sharebar {
   position: sticky;
   left: 5%;
   top: 15%;
+  float: left;
+  z-index: 999;
+}
+
+aside.sharebar.custom--position {
+  position: sticky;
+  left: 1%;
+  top: 21%;
   float: left;
   z-index: 999;
 }
@@ -1153,6 +1162,10 @@ aside .aside__icon.mail {
   margin-bottom: 20px;
 }
 
+.review-book {
+  width: 100%;
+}
+
 .detail-buku__review .btn.btn-primary {
   font-size: 16px;
   font-family: authorMedium;
@@ -1229,21 +1242,54 @@ aside .aside__icon.mail {
 .wrapper__reviews {
   display: flex;
   padding: 40px 20px;
-  border-bottom: 1px solid #DFDFDF;;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.wrapper__reviews-book {
+  display: flex;
+  padding: 40px 20px;
 }
 
 .wrapper__reviews img {
   max-width: 40px;
   height: 40px;
+  border-radius: 50%;
+}
+
+.wrapper__reviews-book img {
+  max-width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .wrapper__reviews .reviews__detail {
   margin-left: 30px;
 }
 
+.wrapper__reviews-book .reviews-book__detail {
+  margin-left: 30px;
+  width: 100%;
+}
+
 .wrapper__reviews .reviews__name {
   color: #000000;
   font-size: 16px;
+}
+
+.wrapper__reviews-book .reviews-book__name {
+  color: #000000;
+  font-size: 16px;
+  text-align: left;
+}
+
+.review-book .form-control {
+  width: 100% !important;
+  height: 120px !important;
+  background: #E8E8E8 !important;
+  border-radius: 3px !important;
+  border: unset !important;
+  box-shadow: unset !important;
+  margin-bottom: 20px !important;
 }
 
 .wrapper__reviews .reviews__date {
@@ -1258,10 +1304,24 @@ aside .aside__icon.mail {
 }
 
 .wrapper__reviews .reviews__laporkan {
+  text-align: right;
+}
+
+.wrapper__reviews .reviews__laporkan a {
   color: #949494;
   font-size: 16px;
-  text-align: right;
   padding-top: 10px;
+  font-family: authorMedium;
+}
+
+.wrapper__reviews .reviews__laporkan a:hover {
+  color: #ED1C24;
+  font-family: authorMedium;
+}
+
+.wrapper__reviews .reviews__laporkan a:focus {
+  color: #ED1C24;
+  font-family: authorMedium;
 }
 
 .wrapper__reviews-pagination {
@@ -2080,6 +2140,12 @@ aside .aside__icon.mail {
   margin: 0;
 }
 
+.list-authors__label ~ img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .wrapper__item-authors {
   margin-bottom: 40px;
 }
@@ -2090,6 +2156,12 @@ aside .aside__icon.mail {
 
 .item-authors__name:hover {
   text-decoration: underline;
+}
+
+.img__allstars {
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
 }
 
 .item-authors__name {
@@ -2213,6 +2285,12 @@ aside .aside__icon.mail {
   height: 100%;
 }
 
+.other-author__img > img {
+  width: 80px;
+  height: 80px !important;
+  border-radius: 50%;
+}
+
 .other-author__socmed img {
   width: 20px;
 }
@@ -2230,11 +2308,10 @@ aside .aside__icon.mail {
 }
 
 .row.author .img-author {
+  width: 166px;
+  height: 166px;
+  border-radius: 50%;
   margin-bottom: 10px;
-}
-
-.row.author .item-authors__socmed {
-  background: #F5F5F5;
 }
 
 .content__detail-author {

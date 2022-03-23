@@ -425,13 +425,29 @@
                 type="button" role="tab" aria-controls="pills-author" aria-selected="false">About Author</button>
             </li>
           </ul>
-          <div class="tab-content d-flex justify-content-center align-items-center" id="pills-tabContent">
+          
+          <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-review" role="tabpanel"
               aria-labelledby="pills-rewview-tab">
               <div class="container text-center my-4">
                 <div class="review__label-first">No Review yet!</div>
                 <div class="review__label-second">Jadilah yang pertama untuk mereview buku ini</div>
-                <button class="btn btn-primary">Tulis Review</button>
+                <div class="collapse review-book" id="collapseExample">
+                  <div class="wrapper__reviews-book">
+                    <img src="./assets/review-img.png" alt="My Profile Image">
+                    <div class="reviews-book__detail">
+                      <div class="reviews-book__name">Your review</div>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ketik di sini ..."></textarea>
+                      <div class="d-flex justify-contents-start">
+                        <button class="btn btn-primary" type="button">Submit Review</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Tulis Review
+                </button>
               </div>
             </div>
             <div class="tab-pane fade" id="pills-author" role="tabpanel" aria-labelledby="pills-author-tab">
