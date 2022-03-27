@@ -261,14 +261,13 @@ i.icon--custom-position {
   color: #009688;
   font-size: 15px;
   font-family: authorMedium;
-  margin-bottom: 15px;
 }
 
 .gpu__content.new-release .carousel__title {
   color: #000000;
   font-size: 20px;
   font-family: authorMedium;
-  margin-bottom: 15px;
+  margin: 10px 0px;
   line-height: 22px;
   width: 200px;
   display: -webkit-box;
@@ -437,14 +436,13 @@ i.icon--custom-position {
   color: #009688;
   font-size: 15px;
   font-family: authorMedium;
-  margin-bottom: 15px;
 }
 
 .gpu__content.bestselling .carousel__title {
   color: #000000;
   font-size: 20px;
   font-family: authorMedium;
-  margin-bottom: 15px;
+  margin: 15px 0px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1167,6 +1165,11 @@ aside .aside__icon.mail {
 }
 
 .detail-buku__review .btn.btn-primary {
+  font-size: 16px;
+  font-family: authorMedium;
+}
+
+.detail-buku__review .btn.btn-danger {
   font-size: 16px;
   font-family: authorMedium;
 }
@@ -2863,6 +2866,10 @@ aside .aside__icon.mail {
   display: none !important;
 }
 
+.btn.btn-primary.tulis-review.hide-btn {
+  display: none;
+}
+
 .gpu__content.international-partnership h2 {
   margin: 20px 0px;
   font-size: 30px;
@@ -2971,13 +2978,66 @@ aside .aside__icon.mail {
   line-height: 22px;
 }
 
+/* ERROR 404 */
+.gpu__content.error404 {
+  margin-top: 80px;
+}
+
+.error404__error404-1 {
+  margin: 100px 0px;
+}
+
+.wrapper__error404 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.error404__text-bold {
+  color: #000000;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: authorMedium;
+  margin: 40px 0px 5px 0px;
+}
+
+.error404__text-regular {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.error404__text-link a {
+  color: #0C68DA;
+  font-size: 20px;
+  font-family: authorMedium;
+}
+
+.error404__text-link a:hover {
+  color: #0c69dad5;
+}
+
+.error404__logo-gpu img {
+  width: 200px;
+  height: 50px;
+}
+
+.error404__error404-1 img {
+  width: 200px;
+  height: 120px;
+}
+
+.error404__error404-2 img {
+  width: auto;
+  height: auto;
+}
+
 /* MEDIA QUERY */
 @media only screen and (max-width: 767px) {
   .bestselling__wrapper {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  
   .carousel {
     margin-top: 10px;
   }

@@ -124,4 +124,11 @@ $(document).ready(function () {
       $('.btn.send-message.custom--width').addClass('hide-btn');
     }
   })
+
+  // Tulis review hide
+  $('.btn.btn-primary.tulis-review').on('click', function() {
+    if ($('.btn.btn-primary.tulis-review').attr('aria-expanded') === "true") {
+      $('.btn.btn-primary.tulis-review').addClass('hide-btn');
+    }
+  })
 })
