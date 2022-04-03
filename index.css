@@ -177,6 +177,8 @@ header .navbar-brand {
   font-size: 13px;
   color: #666666;
   text-align: right;
+  position: relative;
+  top: -10%;
 }
 
 .user-login__img {
