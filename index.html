@@ -78,8 +78,8 @@
               <a class="nav-link dropdown-toggle" href="#updates" id="dropdownUpdates" data-bs-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Updates</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownUpdates">
-                <li><a class="dropdown-item" href="./updates-promo.html">Promo</a></li>
-                <li><a class="dropdown-item" href="./updates-event.html">Events</a></li>
+                <li><a class="dropdown-item" href="./list-promo.html">Promo</a></li>
+                <li><a class="dropdown-item" href="./list-events.html">Events</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -94,12 +94,14 @@
           </ul>
           <div class="d-flex">
             <div class="mx-2">
-              <button type="button" class="btn btn-primary--custom" data-bs-toggle="modal"
-                data-bs-target="#modalLogin">Login</button>
+              <a href="./login.html">
+                <button type="button" class="btn btn-primary--custom">Login</button>
+              </a>
             </div>
             <div>
-              <button type="button" class="btn btn-secondary--custom" data-bs-toggle="modal"
-                data-bs-target="#modalRegister">Register</button>
+              <a href="./register.html">
+                <button type="button" class="btn btn-secondary--custom">Register</button>
+              </a>
             </div>
           </div>
         </div>
@@ -107,132 +109,6 @@
     </nav>
   </header>
   <!-- END HEADER -->
-
-
-  <!-- Start Modal Login-->
-  <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="gpu__content register">
-            <div>
-              <img src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
-              <div class="register__label bold">Login</div>
-              <div class="register__btn-wrapper">
-                <button class="btn btn-google"><img src="./assets/icon-google.svg" alt="icon google"> Login with
-                  Google</button>
-              </div>
-              <div class="register__btn-wrapper">
-                <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
-              </div>
-              <div class="register__btn-wrapper d-flex justify-content-center">
-                <input class="form-control register" type="email" placeholder="Email Address">
-              </div>
-              <div class="register__btn-wrapper d-flex justify-content-center">
-                <input class="form-control register" type="password" placeholder="Password">
-              </div>
-              <div class="register__label medium">
-                <button class="btn btn-primary--custom register my-3">Login</button>
-              </div>
-              <div class="register__label medium blue">
-                <a href="" class="btn">Lupa Password?</a>
-              </div>
-              <div class="register__label regular-gray">Belum punya akun? <a href="">Daftar.</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Modal Login-->
-
-  <!-- Start Modal Register-->
-  <div class="modal fade" id="modalRegister" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalRegisterLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="gpu__content register">
-            <div>
-              <img src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
-              <div class="register__label bold">Create New Account</div>
-
-              <div class="register__btn-wrapper">
-                <button class="btn btn-google"><img src="./assets/icon-google.svg" alt="icon google"> Login with
-                  Google</button>
-              </div>
-              <div class="register__btn-wrapper">
-                <button class="btn btn-facebook"><i class="fab fa-facebook-f"></i> Login with Facebook</button>
-              </div>
-              <div class="register__label medium">
-                <a href="" class="btn" data-bs-toggle="modal" data-bs-target="#RegisterEmail">Register with Email</a>
-              </div>
-              <div class="register__label regular">
-                <p>
-                  Dengan membuat akun, Anda menyetujui <a href="">Ketentuan Penggunaan, Kebijakan Privasi</a> dan untuk
-                  menerima
-                  berita dan pembaruan.
-                </p>
-              </div>
-              <div class="register__label regular-gray custom">Sudah punya akun? <a href="">Log in.</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Modal Register-->
-
-  <!-- Start Modal Register With Email-->
-  <div class="modal fade" id="RegisterEmail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="RegisterEmailLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="gpu__content register">
-            <div>
-              <img src="./assets/logo-gpu.svg" alt="Gramedia Pustaka Utama" />
-              <div class="register__label bold">Create New Account</div>
-              <div class="register__btn-wrapper d-flex justify-content-center">
-                <input class="form-control register" type="email" placeholder="Email Address">
-              </div>
-              <div class="register__btn-wrapper d-flex justify-content-center">
-                <input class="form-control register" type="password" placeholder="Create Password">
-              </div>
-              <div class="register__label medium">
-                <button class="btn btn-primary--custom register my-3">Register</button>
-              </div>
-              <div class="register__label medium">
-                <a href="" class="btn">Register with Social Media</a>
-              </div>
-              <div class="register__recaptcha">
-                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-              </div>
-              <div class="register__label regular">
-                <p>
-                  Dengan membuat akun, Anda menyetujui <a href="">Ketentuan Penggunaan, Kebijakan Privasi</a> dan untuk
-                  menerima
-                  berita dan pembaruan.
-                </p>
-              </div>
-              <div class="register__label regular-gray custom">Sudah punya akun? <a href="">Log in.</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Modal Register With Email-->
 
   <!-- START ISI KONTEN HOME -->
   <main>
@@ -299,31 +175,35 @@
                 </a>
               </div>
               <div class="carousel__detail">
-                <a href="">
-                  <span class="carousel__category">Classic Books,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__category">Biography,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__category">Business Management & Leadership</span>
-                </a>
-                <a href="./detail-buku.html">
-                  <div class="carousel__title">Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Classic Books,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__category">Biography,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__category">Business Management & Leadership</span>
+                  </a>
+                  <a href="./detail-buku.html">
+                    <div class="carousel__title">Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)</div>
+                  </a>
+                </div>
                 <div>
-                  <a href="">
-                    <span class="carousel__author">Victor Hugo,</span>
-                  </a>
-                  <a href="">
-                    <span class="carousel__author">Juhaeri,</span>
-                  </a>
-                  <a href="">
-                    <span class="carousel__author">Bambang Juanda,</span>
-                  </a>
-                  <a href="">
-                    <span class="carousel__author">Wildan</span>
-                  </a>
+                  <div class="category-author__thanone">
+                    <a href="">
+                      <span class="carousel__author">Victor Hugo,</span>
+                    </a>
+                    <a href="">
+                      <span class="carousel__author">Juhaeri,</span>
+                    </a>
+                    <a href="">
+                      <span class="carousel__author">Bambang Juanda,</span>
+                    </a>
+                    <a href="">
+                      <span class="carousel__author">Wildan</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -339,32 +219,36 @@
                 </a>
               </div>
               <div class="carousel__detail">
-                <a href="">
-                  <span class="carousel__category">Classic Books,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__category">Biography,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__category">Business Management & Leadership</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Classic Books,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__category">Biography,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__category">Business Management & Leadership</span>
+                  </a>
+                </div>
                 <a href="./detail-buku.html">
                   <div class="carousel__title">Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)
                   </div>
                 </a>
                 <div>
-                  <a href="">
-                    <span class="carousel__author">Victor Hugo,</span>
-                  </a>
-                  <a href="">
-                    <span class="carousel__author">Juhaeri,</span>
-                  </a>
-                  <a href="">
-                    <span class="carousel__author">Bambang Juanda,</span>
-                  </a>
-                  <a href="">
-                    <span class="carousel__author">Wildan</span>
-                  </a>
+                  <div class="category-author__thanone">
+                    <a href="">
+                      <span class="carousel__author">Victor Hugo,</span>
+                    </a>
+                    <a href="">
+                      <span class="carousel__author">Juhaeri,</span>
+                    </a>
+                    <a href="">
+                      <span class="carousel__author">Bambang Juanda,</span>
+                    </a>
+                    <a href="">
+                      <span class="carousel__author">Wildan</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -377,15 +261,19 @@
                 </a>
               </div>
               <div class="carousel__detail">
-                <a href="">
-                  <span class="carousel__category">Business Management & Leadership</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Business Management & Leadership</span>
+                  </a>
+                </div>
                 <a href="./detail-buku.html">
                   <div class="carousel__title">Ekonomi Eksperimental</div>
                 </a>
-                <a href="">
-                  <div class="carousel__author">Bambang Juanda</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <div class="carousel__author">Bambang Juanda</div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -398,15 +286,19 @@
                 </a>
               </div>
               <div class="carousel__detail">
-                <a href="">
-                  <span class="carousel__category">Classic Books</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Classic Books</span>
+                  </a>
+                </div>
                 <a href="./detail-buku.html">
                   <div class="carousel__title">Si Bungkuk dari Notre-Dame (The Huncback of Notre-Dame)</div>
                 </a>
-                <a href="">
-                  <div class="carousel__author">Victor Hugo</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <div class="carousel__author">Victor Hugo</div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -420,16 +312,20 @@
                 </a>
               </div>
               <div class="carousel__detail">
-                <a href="">
-                  <span class="carousel__category">Biography</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Biography</span>
+                  </a>
+                </div>
                 <a href="./detail-buku.html">
                   <div class="carousel__title">Nganteur Tineung Ngumbar Kelar (Statistics of Dreams Edisi Bahasa Sunda)
                   </div>
                 </a>
-                <a href="">
-                  <div class="carousel__author">Juhaeri</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <div class="carousel__author">Juhaeri</div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -441,15 +337,19 @@
                 </a>
               </div>
               <div class="carousel__detail">
-                <a href="">
-                  <span class="carousel__category">Business Management & Leadership</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Business Management & Leadership</span>
+                  </a>
+                </div>
                 <a href="./detail-buku.html">
                   <div class="carousel__title">Ekonomi Eksperimental</div>
                 </a>
-                <a href="">
-                  <div class="carousel__author">Bambang Juanda</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <div class="carousel__author">Bambang Juanda</div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -544,27 +444,31 @@
             <a href="./detail-buku.html">
               <img src="./assets/book-release-7.png" alt="Buku Minta Disayang" width="170" height="auto" />
               <div class="book__wrapper">
-                <a href="">
-                  <span class="carousel__category">Illustrated Book,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__category">Art, Architecture, & Photography,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__category">Economics & Accounting</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Illustrated Book,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__category">Art, Architecture, & Photography,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__category">Economics & Accounting</span>
+                  </a>
+                </div>
                 <a href="">
                   <div class="carousel__title">Buku Minta Disayang</div>
                 </a>
-                <a href="">
-                  <span class="carousel__author">Rintik Sedu,</span>
-                </a>
-                <a href="">
-                  <span class="carousel__author">Dr. dr. Meta Hanindita, Sp.A.(K),</span>
-                </a>
-                <a href="">
-                  <span class="carousel__author">M. Aan Mansyur</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__author">Rintik Sedu,</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__author">Dr. dr. Meta Hanindita, Sp.A.(K),</span>
+                  </a>
+                  <a href="">
+                    <span class="carousel__author">M. Aan Mansyur</span>
+                  </a>
+                </div>
               </div>
             </a>
           </div>
@@ -572,15 +476,19 @@
             <a href="./detail-buku.html">
               <img src="./assets/book-release-8.png" alt="The Star and I" width="170" height="auto" />
               <div class="book__wrapper">
-                <a href="">
-                  <div class="carousel__category">Romance</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <div class="carousel__category">Romance</div>
+                  </a>
+                </div>
                 <a href="">
                   <div class="carousel__title">The Star and I</div>
                 </a>
-                <a href="">
-                  <div class="carousel__author">Ilana Tan</div>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <div class="carousel__author">Ilana Tan</div>
+                  </a>
+                </div>
               </div>
             </a>
           </div>
@@ -589,15 +497,19 @@
               <img src="./assets/book-release-9.png" alt="Mommyclopedia: 456 Fakta tentang ASI dan Menyusui" width="170"
                 height="auto" />
               <div class="book__wrapper">
-                <a href="">
-                  <span class="carousel__category">Parenting & Family</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Parenting & Family</span>
+                  </a>
+                </div>
                 <a href="">
                   <div class="carousel__title">Mommyclopedia: 456 Fakta tentang ASI dan Menyusui</div>
                 </a>
-                <a href="">
-                  <span class="carousel__author">Dr. dr. Meta Hanindita, Sp.A.(K)</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__author">Dr. dr. Meta Hanindita, Sp.A.(K)</span>
+                  </a>
+                </div>
               </div>
             </a>
           </div>
@@ -606,15 +518,19 @@
               <img src="./assets/book-release-10.png" alt="Mengapa Luka Tidak Memaafkan Pisau" width="170"
                 height="auto" />
               <div class="book__wrapper">
-                <a href="">
-                  <span class="carousel__category">Poetry</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Poetry</span>
+                  </a>
+                </div>
                 <a href="">
                   <div class="carousel__title">Mengapa Luka Tidak Memaafkan Pisau</div>
                 </a>
-                <a href="">
-                  <span class="carousel__author">M. Aan Mansyur</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__author">M. Aan Mansyur</span>
+                  </a>
+                </div>
               </div>
             </a>
           </div>
@@ -622,15 +538,19 @@
             <a href="./detail-buku.html">
               <img src="./assets/book-release-11.png" alt="Selamat Tinggal" width="170" height="auto" />
               <div class="book__wrapper">
-                <a href="">
-                  <span class="carousel__category">Romance</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__category">Romance</span>
+                  </a>
+                </div>
                 <a href="">
                   <div class="carousel__title">Selamat Tinggal</div>
                 </a>
-                <a href="">
-                  <span class="carousel__author">Tere Liye</span>
-                </a>
+                <div class="category-author__thanone">
+                  <a href="">
+                    <span class="carousel__author">Tere Liye</span>
+                  </a>
+                </div>
               </div>
             </a>
           </div>

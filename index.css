@@ -1675,11 +1675,28 @@ aside .aside__icon.mail {
   margin-right: 10px;
 }
 
+.btn.btn-myvalue {
+  color: #333333;
+  font-family: authorMedium;
+  font-size: 15px;
+  background: #ffffff;
+  border: 1px solid #D6D6D6;
+  border-radius: 7px !important;
+  width: 80%;
+}
+
+.btn.btn-myvalue img {
+  width: 82px;
+  height: 12px;
+  margin-right: 10px;
+}
+
 .btn.btn-facebook {
   color: #ffffff;
   font-family: authorMedium;
   font-size: 15px;
   background: #1976D2;
+  border-radius: 7px !important;
   width: 80%;
 }
 
@@ -1734,6 +1751,7 @@ aside .aside__icon.mail {
 
 .btn.btn-primary--custom.register {
   width: 80%;
+  border-radius: 7px !important;
 }
 
 .register__recaptcha {
@@ -1859,14 +1877,21 @@ aside .aside__icon.mail {
   color: #009688;
   font-size: 15px;
   font-family: authorMedium;
-  margin-bottom: 15px;
+}
+
+.gpu__content.my-profile .wishlist-books__category:hover {
+  text-decoration: underline;
 }
 
 .gpu__content.my-profile .wishlist-books__title {
   color: #000000;
   font-size: 20px;
   font-family: authorMedium;
-  margin-bottom: 15px;
+  margin: 15px 0px;
+}
+
+.gpu__content.my-profile .wishlist-books__title:hover {
+  color: #9B1A1A;
 }
 
 .gpu__content.my-profile .wishlist-books__author {
@@ -1875,9 +1900,28 @@ aside .aside__icon.mail {
   font-family: authorMedium;
 }
 
+.gpu__content.my-profile .wishlist-books__author:hover {
+  text-decoration: underline;
+}
+
 .wishlist-books__detail-book {
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.undo-wishlist {
+  background: #EEEEEE;
+  color: #333333;
+  font-size: 16px;
+  font-family: authorMedium;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wishlist-books {
+  width: 220px;
 }
 
 .wrapper__tabs-content .row.custom--margin{
@@ -2979,17 +3023,12 @@ aside .aside__icon.mail {
 }
 
 /* ERROR 404 */
-.gpu__content.error404 {
-  margin-top: 80px;
-}
-
 .error404__error404-1 {
   margin: 100px 0px;
 }
 
 .wrapper__error404 {
   text-align: center;
-  margin-top: 150px;
 }
 
 .error404__text-bold {
@@ -3030,6 +3069,24 @@ aside .aside__icon.mail {
   width: auto;
   height: auto;
 }
+
+.category-author__thanone {
+  line-height: 18px;
+}
+
+/* LIST PROMO */
+
+.gpu__content.list-buku.container.promo-events .showing-promo-events {
+  font-size: 30px;
+  color: #000000;
+  margin: 0;
+  font-family: authorMedium !important;
+}
+.gpu__content.list-buku.container.promo-events .form-select {
+  background-color: #F8F8F8;
+  margin-bottom: 0;
+}
+
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 767px) {
