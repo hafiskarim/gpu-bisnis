@@ -1859,6 +1859,18 @@ aside .aside__icon.mail {
 
 .my-profile__profile-detail {
   margin: 20px 0px;
+  position: relative;
+}
+
+.position-eye {
+  position: absolute;
+  bottom: 12%;
+  right: 2%;
+  cursor: pointer;
+}
+
+.passwordeye.hidden {
+  display: none;
 }
 
 .my-profile__label {

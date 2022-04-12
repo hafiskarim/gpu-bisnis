@@ -56,7 +56,7 @@ $(document).ready(function () {
   });
 
   // best selling book for ipad/tablet screen
-  var mediaQuery =  window.matchMedia('screen and (min-width: 768px)  and (max-width: 1024px)');
+  var mediaQuery = window.matchMedia('screen and (min-width: 768px)  and (max-width: 1024px)');
   if (mediaQuery.matches) {
     $('.col-custom-5').addClass('col-md-6')
     $('bestselling__wrapper').addClass('row')
@@ -89,7 +89,7 @@ $(document).ready(function () {
   });
 
   // button read more di detail buku
-  $("#toggle").click(function() {
+  $("#toggle").click(function () {
     var elem = $('#toggle').find('.fas.fa-angle-double-down')
     if (elem.length == 1) {
       $(".updown").removeClass("fa-angle-double-down")
@@ -105,7 +105,7 @@ $(document).ready(function () {
   });
 
   // collapse icon sidebar
-  $('.list-group-item').on('click', function() {
+  $('.list-group-item').on('click', function () {
     $('.fas', this)
       .toggleClass('fa-angle-down')
       .toggleClass('fa-angle-up');
@@ -113,22 +113,34 @@ $(document).ready(function () {
 
   // Milestones component
   var activeMilestones = $('.owl-item');
-  activeMilestones.click(function() {
+  activeMilestones.click(function () {
     $(this).toggleClass('active--custom')
     activeMilestones.not(this).removeClass('active--custom');
   });
 
   // Button International Partnership
-  $('.btn.send-message.custom--width').on('click', function() {
+  $('.btn.send-message.custom--width').on('click', function () {
     if ($('.btn.send-message.custom--width').attr('aria-expanded') === "true") {
       $('.btn.send-message.custom--width').addClass('hide-btn');
     }
   })
 
   // Tulis review hide
-  $('.btn.btn-primary.tulis-review').on('click', function() {
+  $('.btn.btn-primary.tulis-review').on('click', function () {
     if ($('.btn.btn-primary.tulis-review').attr('aria-expanded') === "true") {
       $('.btn.btn-primary.tulis-review').addClass('hide-btn');
     }
   })
+
+  // Password
+  const togglePassword = document.querySelector("#togglePassword");
+  const password = document.querySelector("#password");
+  togglePassword.addEventListener("click", function () {
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    // toggle the type attribute
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    // toggle the icon
+  });
+
 })
