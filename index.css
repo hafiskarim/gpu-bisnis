@@ -2212,7 +2212,7 @@ aside .aside__icon.mail {
 }
 
 .gpu__content.list-authors .wrapper__item-authors .wrapper__detail-authors img {
-  width: 101px;
+  width: 100%;
   height: 166px;
 }
 
