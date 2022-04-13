@@ -1744,6 +1744,69 @@ aside .aside__icon.mail {
   font-family: authorMedium;
 }
 
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox--custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  left: 2%;
+  bottom: 17%;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  border-radius: 5px;
+}
+
+.checkbox--custom:hover input ~ .checkmark {
+  background-color: #ffffff;
+}
+
+.checkbox--custom input:checked ~ .checkmark {
+  background-color: #009688;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox--custom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox--custom .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .form-control.register {
   width: 80%;
   height: 45px;
