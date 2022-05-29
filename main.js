@@ -105,7 +105,7 @@ $(document).ready(function () {
   });
 
   // collapse icon sidebar
-  $('.list-group-item').on('click', function () {
+  $('.toggle_icon').on('click', function () {
     $('.fas', this)
       .toggleClass('fa-angle-down')
       .toggleClass('fa-angle-up');
