@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: authorRegular !important;
 }
 
+html {
+  scroll-padding-top: 90px;
+}
+
 
 /* HOME atau INDEX */
 
@@ -833,7 +837,7 @@ aside.sharebar {
 aside.sharebar.custom--position {
   position: sticky;
   left: 1%;
-  top: 21%;
+  top: 35%;
   float: left;
   z-index: 999;
 }
@@ -1496,6 +1500,10 @@ aside .aside__icon.mail {
 
 .updates-promo__list {
   margin: 30px 0px;
+}
+
+.updates-promo__list.custom-lh {
+ line-height: 25px;
 }
 
 .promo-desc__value .value--bold {
@@ -2929,6 +2937,7 @@ aside .aside__icon.mail {
 
 .about-us__milestones {
   margin-left: 1.4rem;
+  scroll-padding-top: 20px;
 }
 
 .about-us__ourteam {
@@ -3204,6 +3213,19 @@ aside .aside__icon.mail {
   position: relative;
   bottom: 2px;
   right: 4px;
+}
+
+.title__blog {
+  margin: 0;
+  color: #333333;
+  font-size: 30px;
+  font-family: authorSemiBold !important;
+}
+
+.date__blog {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 /* MEDIA QUERY */
