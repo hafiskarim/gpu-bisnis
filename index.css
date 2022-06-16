@@ -2669,7 +2669,7 @@ aside .aside__icon.mail {
 
 .wrapper__list-buku .row.custom--maxwidth .update-book.title-book {
   margin-top: 0;
-  width: 600px;
+  /* width: 600px; */
   height: auto;
 }
 
